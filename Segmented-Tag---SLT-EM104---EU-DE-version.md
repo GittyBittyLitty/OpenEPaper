@@ -28,3 +28,8 @@ P1.6 | EXT_CLK | This is a 'function' on this pin on the ZBS243
 P0.0 | SPI_CLK
 P0.1 | MOSI
 P0.2 | MISO 
+
+Original Firmware Files (dumped)
+Version:           | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
+:------------------:|:-----------------------:|:--------------:|:---------------:
+Unknown | 359B6E7FD250D327 | C8BA94FF039DCFE41 | 
