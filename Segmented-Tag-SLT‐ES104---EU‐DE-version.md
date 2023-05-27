@@ -1,8 +1,10 @@
 Another segmented tag, with a rectangular screen instead of a mostly square one. This tag and the EM104 share the exact same firmware, despite being a completely different design.
 
+# Specs #
 * ZBS243 SOC 256 bytes IRAM, 8kbyte XRAM, 64kbyte FLASH, 2.4 Ghz 802.15.4 radio
 * SEM9010 - Segmented ePaper controller, somewhat similar to SSD1623L2
 
+# Photos # 
 <img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/12bb0159-365a-46e8-bd35-6ab15ea3f245">
 <img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/c6149fab-3809-426c-8523-b0ce2a9afbdb">
 <img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/8a1a5ada-db62-40f0-ade4-a5810f4ce8cd"><br/>
@@ -12,6 +14,8 @@ Another segmented tag, with a rectangular screen instead of a mostly square one.
 <br/><br/>Uses a similar pinout to the SLT-EM105, however: VCC and GND pins are reversed!<br/>
 <br/>
 
+
+# Pins to the EPaper Display #
 ZBS243 Pin                       |ePaper controller        | Note             
 :-------------------------:|:-------------------------:|:-------------------------:
 P2.0 | EPD_Busy 
@@ -23,7 +27,12 @@ P0.0 | SPI_CLK
 P0.1 | MOSI
 P0.2 | MISO 
 
-Original Firmware Files (dumped)
+# Programming #
+<img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/68c9b920-685c-49a5-aeb3-6157b03ef170"><br/>
+A jig to program this tag in can be found [here](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/Hardware/Uncommon%20Tag%20Jigs/SLT-ES104.stl)
+
+
+# Original Firmware Files (dumped) # 
 Version | Type     | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
 :------------------:|:----------:|:-------------:|:--------------:|:---------------:
 [???](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/fw_dumps/__0-C8BA94FF03546A5B0-SLT-ES104.bin) | SLT-ES104 | 359B6E7FD250D327E585C951615F2A07 | C8BA94FF03546A5B0
