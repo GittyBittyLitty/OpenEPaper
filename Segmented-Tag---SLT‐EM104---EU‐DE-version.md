@@ -30,6 +30,6 @@ P0.1 | MOSI
 P0.2 | MISO 
 
 Original Firmware Files (dumped)
-Type | Version:     | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
+Version | Type     | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
 :------------------:|:----------:|:-------------:|:--------------:|:---------------:
 [???](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/fw_dumps/__0-C8BA94FF039DCFE41-SLT-EM104.bin) | SLT-EM104 | 359B6E7FD250D327E585C951615F2A07 | C8BA94FF039DCFE41
