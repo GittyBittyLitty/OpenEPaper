@@ -31,6 +31,6 @@ P0.1 | MOSI
 P0.2 | MISO 
 
 Original Firmware Files (dumped)
-Version:           | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
-:------------------:|:-----------------------:|:--------------:|:---------------:
-Unknown | A27D978C48888FA045E8D3F90DC27029 | 840B2D904BB90131 | 
+Version | Type     | MD5 (first 10kbyte) | Original Tag Mac (as written on case)| Note
+:------------------:|:----------:|:-------------:|:--------------:|:---------------:
+[???](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/fw_dumps/__0-840B2D904BB90131-SLT-EM007.bin) | SLT-EM007 | A27D978C48888FA045E8D3F90DC27029 | 840B2D904BB90131
