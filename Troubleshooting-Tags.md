@@ -40,9 +40,9 @@ A problem seen mostly on the 1.54" displays; sometimes a screen becomes blurry, 
 
 When exposed to a lot of light, sometimes the the pigments will 'burn' in place, leaving a 'ghost'-image in place that will not easily go away. 
 
-* Shifted or distorted images
+* Shifted or distorted images<br/>
 
-<img width="300" alt="distorted" src="https://user-images.githubusercontent.com/2544995/232601619-af98ff12-a784-4cc5-a962-65533282a1c6.png"><img width="300" alt="shifted" src="https://user-images.githubusercontent.com/2544995/232601832-432ccfeb-39c7-4f70-aaf7-8beb156f03cb.png">
+<img width="300" alt="distorted" src="https://user-images.githubusercontent.com/2544995/232601619-af98ff12-a784-4cc5-a962-65533282a1c6.png"><img width="300" alt="shifted" src="https://user-images.githubusercontent.com/2544995/232601832-432ccfeb-39c7-4f70-aaf7-8beb156f03cb.png"><br/>
 Sometimes the EPD has problems keeping track of incoming bits, or has a problem with its X/Y memory address pointer. Most of the times, this is transient, but some panels are more susceptible than others. Most of the time it's just a small shift; usually limited to 8 pixels. In that case, the EPD lost track of an entire byte
 
 * Other failures
