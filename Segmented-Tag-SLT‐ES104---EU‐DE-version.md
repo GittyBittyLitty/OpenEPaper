@@ -1,7 +1,7 @@
 Another segmented tag, with a rectangular screen instead of a mostly square one. This tag and the EM104 share the exact same firmware, despite being a completely different design.
 
 # Specs #
-* ZBS243 SOC 256 bytes IRAM, 8kbyte XRAM, 64kbyte FLASH, 2.4 Ghz 802.15.4 radio
+* [[ZBS 243 / SEM9110|ZBS243-(SEM9110)-SoC]] 8051 based core, 64kbyte flash, 8kbyte XRAM, 256 bytes iRAM 16 MHz, 802.15.4 2.4Ghz radio
 * SEM9010 - Segmented ePaper controller, somewhat similar to SSD1623L2
 
 # Photos # 
