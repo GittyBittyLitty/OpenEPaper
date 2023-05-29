@@ -2,4 +2,4 @@ Access Points within the same WiFi network automatically discover each other thr
 
 Give it a try!
 
-![Multi AP screenshot](multiap.jpg)
+![Multi AP screenshot](usage/multiap.jpg)
