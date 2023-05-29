@@ -42,4 +42,4 @@ Please add additional information where possible!
 
 ### Misc stuff
 
-- [FAQ](misc/FAQ)
+- [FAQ](FAQ)
