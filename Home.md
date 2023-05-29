@@ -35,7 +35,7 @@ Please add additional information where possible!
 
 ### User generated images 
 
-- [[Image specs|Image-specs]]
+- [[Image specifications|Image-specifications]]
 - [[Push external image|Image-upload-demo]]
 - [[Pull external image|Image-pull]]
 - [[Home Assistant|Home-assistant]]
