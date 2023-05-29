@@ -38,8 +38,8 @@ Please add additional information where possible!
 - [Image specs](usage/Image-specs.md)
 - [Push external image](usage/Image-upload-demo.md)
 - [Pull external image](usage/Image-pull.md)
-- [Home Assistant](usage/Home-assistant.md)
+- [Home Assistant](Home-assistant.md)
 
 ### Misc stuff
 
-- [FAQ](misc/FAQ.md)
+- [FAQ](FAQ.md)
