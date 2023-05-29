@@ -1,6 +1,7 @@
 Due to the characteristics of e-paper technology, electronic tags can only display pure white, black, and red colors. To ensure legibility, certain considerations need to be taken into account when displaying text on these tags.
 
 The file format for images to be displayed on e-paper tags is JPEG with the baseline (non-progressive) specification.
+To ensure the image is displayed correctly without distortion, it is essential that the image dimensions precisely match the size of the tag screen: 152x152 pixels for 1.54", 296x128 pixels for 2.9", and 400x300 pixels for 4.2". The esp32 is not powerful enough to do image resize.
 
 When incorporating text in images, avoid using anti-aliasing. Rendering fonts without anti-aliasing can be challenging for some libraries. A workaround is to start with an indexed colored image that uses a palette consisting of white, black, and red. By drawing the text on this indexed colored image and subsequently converting it to a 24-bit RGB image, you get rid of the antialiassing. An example demonstrating this technique can be found in the [[Push external image|Image-upload-demo]] article.
 
