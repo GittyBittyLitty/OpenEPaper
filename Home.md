@@ -10,7 +10,7 @@ Please add additional information where possible!
 
 ## Tags
 
-- [1.54″ ST-GR16000](tags/1.54″‐1.6″-ST‐GR16000)
+- [[1.54″ ST-GR16000|tags/1.54″‐1.6″-ST‐GR16000]]
 - [2.9″ ST‐GR29000](tags/2.9″-ST‐GR29000.md)
 - [2.9″ ST-GM29XXF Low Temp](tags/2.9″-ST‐GM29XXF-Low-Temp.md)
 - [Segmented Tag SLT‐EM007 UK version](tags/Segmented-Tag-SLT‐EM007-UK-version.md)
@@ -42,4 +42,4 @@ Please add additional information where possible!
 
 ### Misc stuff
 
-- [FAQ](FAQ)
+- [[Frequently Asked Questions|FAQ]]
