@@ -1,7 +1,7 @@
 To push an image to one of the tags, follow these steps:
 
 1. Prepare the image file according to the specifications outlined in the [[Image specifications|Image-specifications]] article.
-2. Perform an HTTP POST request to `/img_upload` on the Access Point, including the image file as an attachment.
+2. Perform an HTTP POST request to `/imgupload` on the Access Point, including the image file as an attachment.
 
 The POST request should include the following parameters:
 
