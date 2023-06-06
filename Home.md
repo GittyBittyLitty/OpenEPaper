@@ -23,6 +23,7 @@ Please add additional information where possible!
 - [[NFC chip|NFC-Solum-2.9″-and-1.54″]]
 - [[Troubleshooting tags|Troubleshooting-Tags]]
 - [[Building an Access Point|Building-an-Access-Point]]
+- [[Troubleshooting Access Points|Troubleshooting-Access-Points]]
 
 ## Usage
 
