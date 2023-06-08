@@ -17,3 +17,7 @@ If you're worried about bad quality JPG's, you're generating them wrong. Artifac
 ### I use an Access Point without PSRAM (like the ESP32), and I get crippled images on my 4.2" screens
 
 PSRAM is needed for holding a full image buffer of the 400x300 pixel 4.2" displays. Without PSRAM, we can only hold a 1 bit/pixel buffer. Only black is displayed, no red. And rendering a jpeg image is not working either. Please use a board with PSRAM, like a ESP-S2 (but watch out, there are also ESP32-S2 boards being sold without PSRAM).
+
+### I use an Apple M1 Pro to compile the esp32 software. The website to manage the tags is not fully working.
+
+Sadly, compiling the esp32-scripts on an Apple M1 Pro (and probably M2 too) seem to cause problems. It compiles and boots nicely, but it results in weird runtime problems (the `sscanf` command doesn't do that it's supposed to do, and probabaly more issues). So, try to use another system. Intel-based MacBook Pro, Windows, and Linux all work fine.
