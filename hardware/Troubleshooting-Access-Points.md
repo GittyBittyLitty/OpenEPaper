@@ -15,8 +15,8 @@ Pinout for ESP32 (Lolin32 lite): Use environment "Simple_AP":
 |    19     |        MISO        |
 |     2     |       RESET        |
 |  13 + 15  |        VCC         |
-|    16     |         RX         |
-|    17     |         TX         |
+|    17     |         RX         |
+|    16     |         TX         |
 |    GND    |        GND         |
 
 
