@@ -29,8 +29,8 @@ Pinout for ESP32-S2 (Wemos S2 mini): Use environment "OpenEPaperLink_Mini_AP"
 |      8       |        MISO        |
 |      13      |       RESET        |
 |     VCC      |        VCC         |
-|      7       |         RX         |
-|      6       |         TX         |
+|      6       |         RX         |
+|      7       |         TX         |
 |      12      |        TEST        |
 |     GND      |        GND         |
 
