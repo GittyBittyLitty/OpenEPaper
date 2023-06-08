@@ -14,3 +14,6 @@ Encryption there is none. Probably that's why it's called OpenEPaperLink ;-) The
 
 If you're worried about bad quality JPG's, you're generating them wrong. Artifacts are really and easily avoidable. Please take a look at the [[Image specifications|Image-specifications]] and the python example at [[Push external image|Image-upload]]. Jpeg images are by far the most easy to generate for you, and at the ESP32 side, the easiest to decode. Decoding a PNG is much more memory/processor intensive, and although there are some libraries for it, there is no space left in the firmware. And really, it's doesn't have advantages regarding the quality of the image. Much more important is to disable antialiassing of your fonts/drawings. See the examples.
 
+### I use an Access Point without PSRAM (like the ESP32), and I get crippled images on my 4.2" screens
+
+PSRAM is needed for holding a full image buffer of the 400x300 pixel 4.2" displays. Without PSRAM, we can only hold a 1 bit/pixel buffer. Only black is displayed, no red. And rendering a jpeg image is not working either. Please use a board with PSRAM, like a ESP-S2 (but watch out, there are also ESP32-S2 boards being sold without PSRAM).
