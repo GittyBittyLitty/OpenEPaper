@@ -24,7 +24,7 @@ Please add additional information where possible!
 - [[Troubleshooting tags|Troubleshooting-Tags]]
 - [[Building an Access Point|Building-an-Access-Point]]
 - [[Troubleshooting Access Points|Troubleshooting-Access-Points]]
-- [[Hardware mods for the tags|Hardware-mods]]
+- [[Hardware mods for the tags|Hardware-mods]] to add a button or reed relay
 
 ## Usage
 
