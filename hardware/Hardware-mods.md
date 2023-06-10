@@ -6,7 +6,7 @@ More interesting is to build the switch into the tag without using the debug con
 One of the options is to build in a reed relay.
 Needed: 10mm reed relay, 100nF 0603 capacitor, steady hands, knife, loupe, flux, good soldering station.
 
-<img src="hardware/IMG_1624.jpeg?v3" width="800">
+<img src="hardware/IMG_1624.jpeg?v4" width="800">
 
 Identify the TEST pin via, right under the processor
 
@@ -30,7 +30,7 @@ Use a thin wire to connect the TEST pad to the reed relay.
 
 With a knife or pliers, remove a bit of plastic of the casing.
 
-<img src="hardware/IMG_1632.jpeg?v4" width="800">
+<img src="hardware/IMG_1632.jpeg?v5" width="800">
 
 Ready! You can close the case (it just fits!). Now the tag wakes up and checks in if you hold a magnet in front of the screen.
 
