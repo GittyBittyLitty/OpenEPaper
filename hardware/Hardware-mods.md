@@ -4,7 +4,8 @@ There are methods to wake the tag on request. For that, you have to modify the t
 
 More interesting is to build the switch into the tag without using the debug connector, as soldering onto it prevents you from using a programming jig. 
 One of the options is to build in a reed relay.
-Needed: 10mm reed relay, 100nF 0603 capacitor, steady hands, knife, loupe, flux, good soldering station.
+
+Needed: 10 x 1.8mm reed relay (the bigger ones are too wide), 100nF 0603 capacitor, steady hands, knife, loupe, flux, good soldering station.
 
 <img src="hardware/IMG_1624.jpeg?v4" width="800">
 
