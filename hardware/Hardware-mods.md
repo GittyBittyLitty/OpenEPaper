@@ -4,5 +4,4 @@ There are methods to wake the tag on request. For that, you have to modify the t
 
 More interesting is to build the switch into the tag without using the debug connector, as soldering onto it prevents you from using a programming jig. 
 
-![](/hardware/IMG_1624.jpeg)
-
+<img src="hardware/IMG_1624.jpeg">
