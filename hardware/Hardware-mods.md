@@ -3,9 +3,9 @@ During normal use, the tags sleeps most of the time. It wakes up every once in a
 There are methods to wake the tag on request. For that, you have to modify the tag a bit. In the simplest form, you can add a push button between the 'TEST'-pin and ground, plus a capacitor of 100nF parallel to the switch contacts. The capacitor provides switch debouncing, and the tag firmware uses it to sense if a button switch is connected. You can find the TEST- and ground-pins at the debug connector at the back of the tag.
 
 More interesting is to build the switch into the tag without using the debug connector, as soldering onto it prevents you from using a programming jig. 
-One of the options is to build in a reed relay.
+One of the options is to build in a reed switch.
 
-Needed: 10 x 1.8mm reed relay (the bigger ones are too wide), 100nF 0603 capacitor, steady hands, knife, loupe, flux, good soldering station.
+Needed: 10 x 1.8mm reed switch (the bigger ones are too wide), 100nF 0603 capacitor, steady hands, knife, loupe, flux, good soldering station.
 
 <img src="hardware/IMG_1624.jpeg?v4" width="800">
 
