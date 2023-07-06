@@ -8,6 +8,7 @@ In the script editor, create a new function called `getEventsForNextDay` that wi
 function getEventsForNextDay() {
   var start = new Date();
   var end = new Date();
+  var time_offset = 1; //offset to GMT in hours, + hours is "right of GMT", i.e. Europe etc. - hours is "left of GMT" - i.e. USA etc :) Also takes into account DST/BST etc.
   end.setDate(end.getDate() + 1);
   var calendars = CalendarApp.getAllCalendars();
   var events = [];
@@ -18,8 +19,8 @@ function getEventsForNextDay() {
       var event = eventsInCalendar[j];
       events.push({
         title: event.getTitle(),
-        start: Math.floor(event.getStartTime().getTime() / 1000),
-        end: Math.floor(event.getEndTime().getTime() / 1000),
+        start: Math.floor((event.getStartTime().getTime() / 1000)+(time_offset*3600)),
+        end: Math.floor((event.getEndTime().getTime() / 1000)+(time_offset*3600)),
         location: event.getLocation(),
         description: event.getDescription()
       });
