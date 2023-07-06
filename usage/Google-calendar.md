@@ -8,7 +8,19 @@ In the script editor, create a new function called `getEventsForNextDay` that wi
 function getEventsForNextDay() {
   var start = new Date();
   var end = new Date();
-  var time_offset = 1; //offset to GMT in hours, + hours is "right of GMT", i.e. Europe etc. - hours is "left of GMT" - i.e. USA etc :) Also takes into account DST/BST etc.
+  var time_offset = 0; 
+  /** Offset to GMT in hours, + hours is "right of GMT", i.e. Europe etc. - hours is "left of GMT", i.e. USA etc :) 
+   *  Also helpful to take into account DST/BST etc. 
+   *  Leave as 0 to keep timestamp as GMT/UTC. 
+   *  England, UK Summer (GMT+1), 
+   *  Germany/Netherlands Summertime (GMT+2)
+   *  USA, Central Daylight Time (GMT-5)
+   *  USA, Mountain Daylight Time (GMT-6)
+   *  USA, Mountain Standard Time (GMT-7)
+   *  USA, Pacific Daylight Time (GMT-7)
+   *  USA, Alaska Daylight Time (GMT-8)
+   *  USA, Hawaii-Aleutian Standard Time (GMT-10)
+   **/
   end.setDate(end.getDate() + 1);
   var calendars = CalendarApp.getAllCalendars();
   var events = [];
