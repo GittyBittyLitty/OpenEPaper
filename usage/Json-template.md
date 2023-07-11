@@ -21,13 +21,15 @@ Example json file:
 ```
 
 Result:
+
 ![Json template](usage/jsontemplate.jpg)
 
 Parameters:
-`{ "text": [x, y, "text", "fontname", color] }`
-`{ "box": [x, y, width, height, color] }`
-`{ "line": [x1, y1, x2, y2, color] }`
-`{ "triangle": [x1, y1, x2, y2, x3, y3, color] }`
+
+* `{ "text": [x, y, "text", "fontname", color] }`
+* `{ "box": [x, y, width, height, color] }`
+* `{ "line": [x1, y1, x2, y2, color] }`
+* `{ "triangle": [x1, y1, x2, y2, x3, y3, color] }`
 
 `color`: 0: white, 1: black, 2: red
 
@@ -50,19 +52,19 @@ Plain text fonts by https://github.com/olikraus/u8g2
 ### Big fonts to be used for headings and big numbers:
 
 any fonts in the /fonts folder:
-`fonts/bahnschrift20` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-`fonts/bahnschrift30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-`fonts/bahnschrift70` only `0123456789.`
-`fonts/calibrib30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-`fonts/calibrib50` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
-`fonts/calibrib60` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
-`fonts/calibrib80` only `0123456789.°`
-`fonts/calibrib100` only `0123456789.°`
-`fonts/calibrib120` only `0123456789.°`
-`fonts/calibrib150` only `0123456789.°`
-`fonts/twcondensed20` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
-`fonts/weathericons30` limited charactset, see https://erikflowers.github.io/weather-icons/
-`fonts/weathericons70` limited charactset, see https://erikflowers.github.io/weather-icons/
-`fonts/weathericons78` limited charactset, see https://erikflowers.github.io/weather-icons/
+* `fonts/bahnschrift20` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `fonts/bahnschrift30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `fonts/bahnschrift70` only `0123456789.`
+* `fonts/calibrib30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `fonts/calibrib50` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
+* `fonts/calibrib60` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
+* `fonts/calibrib80` only `0123456789.°`
+* `fonts/calibrib100` only `0123456789.°`
+* `fonts/calibrib120` only `0123456789.°`
+* `fonts/calibrib150` only `0123456789.°`
+* `fonts/twcondensed20` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
+* `fonts/weathericons30` limited charactset, see https://erikflowers.github.io/weather-icons/
+* `fonts/weathericons70` limited charactset, see https://erikflowers.github.io/weather-icons/
+* `fonts/weathericons78` limited charactset, see https://erikflowers.github.io/weather-icons/
 
 If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
