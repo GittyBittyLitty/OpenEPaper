@@ -1,0 +1,25 @@
+# Specs #
+* Marvel 88MZ100 SoC - 64Mhz ARM Cortex-M3 512kB Flash / 160kB code/data ram
+* 7.4/7.5” UC8159c ePaper display 640x384px
+* SPI flash 1mbyte on ePaper flex
+* 4x CR2540 button cell
+* Unknown NFC controller
+* Unknown RF wake IC
+
+# Known models # 
+Model | MAC Id | Options | Note | Label
+:-------------------------:|:------:|:-----------------------:|:-------------------------:|:---------------------:
+ST-GR750BN | 743 | NFC |  | <img width="150" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/71abdf20-1f4d-45fc-878b-c3819d69af03">
+
+ Tag Information                     |       | Note
+:-------------------------:|:-------------------------:|:-------------------------:
+FCC ID | [2AFWN-ST-GR7500N](https://fccid.io/2AFWN-ST-GR7500N)
+
+# Photos #
+<img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/eea1aec3-4b3e-4086-85bc-ea57f2f03b9f6">
+<img width="300" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/59098cea-ded4-415f-83e7-3a45f83e49a1">
+<img width="200" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/648b75e1-7711-4033-b5d4-b8f5342731a8">
+<br/>
+<img width="200" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/fbd360dd-376e-4b49-8a96-13c6e4f44ba5">
+<img width="200" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/2544995/959b1767-82ea-4a17-9239-d86a3d0fc98c">
+<br/>
