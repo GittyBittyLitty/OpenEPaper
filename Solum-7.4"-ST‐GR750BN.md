@@ -1,7 +1,6 @@
 # Specs #
 * Marvel 88MZ100 SoC - 64Mhz ARM Cortex-M3 512kB Flash / 160kB code/data ram
 * 7.4/7.5” UC8159c ePaper display 640x384px
-* SPI flash 1mbyte on ePaper flex
 * 4x CR2540 button cell
 * Unknown NFC controller
 * Unknown RF wake IC
