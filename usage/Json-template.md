@@ -31,11 +31,14 @@ Result:
 Parameters:
 
 * `{ "text": [x, y, "text", "fontname", color] }`
+* `{ "text": [x, y, "text", "fontname", color, alignment] }`
 * `{ "box": [x, y, width, height, color] }`
 * `{ "line": [x1, y1, x2, y2, color] }`
 * `{ "triangle": [x1, y1, x2, y2, x3, y3, color] }`
 
 `color`: 0: white, 1: black, 2: red
+
+optional, `alignment`: 0: left, 1: center, 2: right
 
 `fontname`: one of the following fonts:
 
@@ -72,3 +75,12 @@ any fonts in the /fonts folder:
 * `fonts/weathericons78` limited charactset, see https://erikflowers.github.io/weather-icons/
 
 If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
+
+### Truetype fonts:
+
+`{ "text": [x, y, "text", "fontname", color, alignment, size] }`
+
+Put the truetype font in the /fonts folder. Make sure you select your truetype font file carefully: some are very big, and that will not fit in the file system.
+
+example:
+`{ "text": [0, 10, "Use any font in any size!", "/fonts/Inkfree.ttf", 1, 0, 40] }`
