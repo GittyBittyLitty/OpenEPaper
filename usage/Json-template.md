@@ -70,9 +70,6 @@ any fonts in the /fonts folder:
 * `fonts/calibrib120` only `0123456789.°`
 * `fonts/calibrib150` only `0123456789.°`
 * `fonts/twcondensed20` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
-* `fonts/weathericons30` limited charactset, see https://erikflowers.github.io/weather-icons/
-* `fonts/weathericons70` limited charactset, see https://erikflowers.github.io/weather-icons/
-* `fonts/weathericons78` limited charactset, see https://erikflowers.github.io/weather-icons/
 
 If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
 
