@@ -21,3 +21,7 @@
 ### I use an Apple M1 Pro to compile the esp32 software. The website to manage the tags is not fully working.
 
 * Sadly, compiling the esp32-scripts on an Apple M1 Pro (and probably M2 too) seem to cause problems. It compiles and boots nicely, but it results in weird runtime problems (the `sscanf` command doesn't do that it's supposed to do, and probabaly more issues). So, try to use another system. Intel-based MacBook Pro, Windows, and Linux all work fine.
+
+### Does OpenEpaperlink run over ZigBee? / Can I use my existing ZigBee stick as an Access Point?
+It's complicated. Firstly, you cannot and will never be able to directly use the ZigBee protocol for OEPL (so you can't have all your lightbulbs acting as repeaters for OEPL messages.)
+However, it is possible to flash some ZigBee co-ordinators with OEPL firmware so that they can then be used alongside a Python script on Windows (possibly Linux too, pending testing) which replaces the ESP part of the usual AP.
