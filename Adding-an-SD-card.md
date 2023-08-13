@@ -16,7 +16,7 @@ This guide is for adding ad SD card to a Nano AP. I will use this module: ![SD c
 
 
 If you build it now, you'll get an error message. We need to change one more thing.
-* In the storage.cpp, row 22 (at the time of writing with the 1.8 version), change 'VSPI' to 'HSPI'.
+* In the storage.cpp, row 22 (at the time of writing with the 1.8 and 1.9 version), change 'VSPI' to 'HSPI'.
 * Now upload as usual.
 
 For the hardware side, solder the wires. Format the SD card and it should work!
