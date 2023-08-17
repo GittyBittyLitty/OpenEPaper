@@ -55,7 +55,7 @@ This is a script for displaying your Google task list.
 It uses the [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template) to generate a list of tasks.
 You can specify the used font by appending `?font=0` up to `?font=3` to the App Scripts URL
 
-```
+```js
 const fonts = [
   {name: "t0_14b_tf", startY: 13, height: 13, maxItems: 9, maxLength: 80},
   {name: "7x14_tf", startY: 14, height: 14, maxItems: 9, maxLength: 80},
