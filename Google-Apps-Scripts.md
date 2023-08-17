@@ -52,7 +52,7 @@ This App Script calls the `getEventsForNextDay()` function to get the events in 
 
 # Google Task List (ToDo List)
 This is a script for displaying your Google task list.
-It uses the [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template) to generate a list of tasks.
+It uses the [[JSON-Template|Json-template]] to generate a list of tasks.
 You can specify the used font by appending `?font=0` up to `?font=3` to the App Scripts URL
 
 ```js
@@ -131,7 +131,7 @@ function doGet(e) {
 
 # RSS Feeds
 This is a workaround for the currently used RSS implementation of the OEPL AP, which does work well with each and every RSS feed.
-To fix this issue the following script can be used to let Google Apps Script parse the RSS feed data and provide it as [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template).
+To fix this issue the following script can be used to let Google Apps Script parse the RSS feed data and provide it as [[JSON-Template|Json-template]].
 To use this script append one or both of the following options to the Apps Script URL:
 * `font=0` up to `font=3` for font selection
 * `url=https://www.myrssfeed.de/rss.xml` to provide the RSS feed
