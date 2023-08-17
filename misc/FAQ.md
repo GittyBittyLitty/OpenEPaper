@@ -31,3 +31,7 @@ In theory, it's possible to reflash a ZigBee coordinator with firmware that enab
 ### Where can I purchase the tags? Is there a plug-and-play solution for an Access Point?
 
 * To obtain used Solum tags, you can explore platforms like eBay or Tindie. If you're seeking a straightforward way to construct an Access Point, a kit is available for purchase at [this Tindie shop](https://www.tindie.com/stores/electronics-by-nic/). Additionally, if soldering isn't within your skillset, you have the option to order it pre-assembled. However, it's important to recognize that the entirety of the OpenEpaperLink project is intended for hobbyist tinkering. While efforts have been made to enhance user-friendliness, it's not designed as a completely ready-made solution.
+
+### How can I import a tagDB (after update or new installation)
+ * Overwrite `tagDB.json` inside the `current` folder
+ * Reboot the AP (by power cycling or physical reboot button, do not use the reboot option in the website because that will save the current DB first) 
