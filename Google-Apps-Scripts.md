@@ -1,4 +1,4 @@
-These are some example Google App Scripts that can be used to display various things.
+These are some example Google Apps Scripts that can be used to display various things.
 
 # Google Calendar
 To use Google Apps Script to get all events for the next day and return them via JSON in a web app, you can follow these steps:
@@ -131,7 +131,7 @@ function doGet(e) {
 
 # RSS Feeds
 This is a workaround for the currently used RSS implementation of the OEPL AP, which does work well with each and every RSS feed.
-To fix this issue the following script can be used to let Google App Scripts parse the RSS feed data and provide it as [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template).
+To fix this issue the following script can be used to let Google Apps Script parse the RSS feed data and provide it as [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template).
 To use this script append one or both of the following options to the Apps Script URL:
 * `font=0` up to `font=3` for font selection
 * `url=https://www.myrssfeed.de/rss.xml` to provide the RSS feed
