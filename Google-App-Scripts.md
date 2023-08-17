@@ -4,7 +4,7 @@ These are some example Google App Scripts that can be used to display various th
 To use Google Apps Script to get all events for the next day and return them via JSON in a web app, you can follow these steps:
 * Create a new Google Apps Script project by going to [https://script.google.com](https://script.google.com) and clicking on "New project".
 * Paste the following code into the editor:
-```
+```js
 function getEventsForNextDay() {
   var start = new Date();
   var end = new Date();
@@ -123,6 +123,71 @@ function doGet(e) {
   }
   const params = e.parameter;
   var content = getTasks(params.font);
+  var output = ContentService.createTextOutput(content);
+  output.setMimeType(ContentService.MimeType.JSON);
+  return output;
+}
+```
+
+# RSS Feeds
+This is a workaround for the currently used RSS implementation of the OEPL AP, which does work well with each and every RSS feed.
+To fix this issue the following script can be used to let Google App Scripts parse the RSS feed data and provide it as [JSON-Template](https://github.com/jjwbruijn/OpenEPaperLink/wiki/Json-template).
+To use this script append one or both of the following options to the Apps Script URL:
+* `font=0` up to `font=3` for font selection
+* `url=https://www.myrssfeed.de/rss.xml` to provide the RSS feed
+
+Examples:
+* `<Apps Script URL>?font=2` (this will default to the URL configure in the Apps Script)
+* `<Apps Script URL>?font=2&url=https://rss.golem.de/rss.php?feed=RSS2.0` (golem.de rss feed)
+
+```js
+const fonts = [
+  {name: "t0_14b_tf", startY: 13, height: 13, maxItems: 9, maxLength: 80},
+  {name: "7x14_tf", startY: 14, height: 14, maxItems: 9, maxLength: 80},
+  {name: "glasstown_nbp_tf", startY: 14, height: 14, maxItems: 9, maxLength: 80},
+  {name: "fonts/bahnschrift20", startY: 0, height: 20, maxItems: 6, maxLength: 30},
+];
+
+const defaultUrl = "https://www.tagesschau.de/infoservices/alle-meldungen-100~rss2.xml";
+
+function getRssFeed(fontNumber, url) {
+  if(!url)
+  {
+    url = defaultUrl;
+  }
+  if(!fontNumber || fontNumber >= fonts.length)
+  {
+    fontNumber = 2;
+  }
+
+  var feed = UrlFetchApp.fetch(url).getContentText();
+  feed = XmlService.parse(feed);
+  const items = feed.getRootElement().getChild("channel").getChildren("item");
+
+  const font = fonts[fontNumber];
+
+  var events = [];
+  var x = 0;
+  var y = font.startY;
+  for (var i in items) {
+    const text = items[i].getChild("title").getValue().substring(0, font.maxLength); 
+    events.push({text: [x, y, text, font.name, 1]});
+    y += font.height;
+    if(events.length >= font.maxItems)
+    {
+      break;
+    }
+  }
+  return JSON.stringify(events);
+}
+
+function doGet(e) {
+  if(!e)
+  {
+    e = {parameter: {font: 1, url: defaultUrl}};
+  }
+  const params = e.parameter;
+  const content = getRssFeed(params.font, params.url);
   var output = ContentService.createTextOutput(content);
   output.setMimeType(ContentService.MimeType.JSON);
   return output;
