@@ -10,12 +10,23 @@ Please add additional information where possible!
 
 ## Tags
 
+### ZBS based (M2)
 - [[1.54″ ST-GR16000|1.54″‐1.6″-ST‐GR16000]]
 - [[2.9″ ST‐GR29000|2.9″-ST‐GR29000]]
 - [[2.9″ ST-GM29XXF Low Temp|2.9″-ST‐GM29XXF-Low-Temp]]
+- [[4.2″ ST GR42003N2|4.2″ ST GR42003N2]]
 - [[Segmented Tag SLT‐EM007 UK version|Segmented-Tag-SLT‐EM007-UK-version]]
 - [[Segmented Tag SLT‐EM104 EU‐DE version|Segmented-Tag-SLT‐EM104-EU‐DE-version]]
 - [[Segmented Tag SLT‐ES104 EU‐DE version|Segmented-Tag-SLT‐ES104-EU‐DE-version]]
+
+### NRF based (M3)
+- [[2.9″-EL029H3WRA|2.9″-EL029H3WRA]]
+
+### Other
+- [[2.9″ EL029GSWRN|2.9″ EL029GSWRN]]
+- [[4.2″‐ST‐GR4200C|4.2″‐ST‐GR4200C]]
+- [[7.5″ ST‐GR750BN|7.5″ ST‐GR750BN]]
+- [[13.3″-EL133C2WRN|13.3″-EL133C2WRN]]
 
 ## Access Points
 
