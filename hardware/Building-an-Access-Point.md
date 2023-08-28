@@ -31,8 +31,10 @@ Simplified circuit diagram
 [<img width="450" alt="circuit" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/3c38d0bf-c650-4c6f-8228-0183afe6c1ba">](https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/3c38d0bf-c650-4c6f-8228-0183afe6c1ba)
 
 ### Building the mini AP kit
+
+A video showing how to build the mini AP kit:
 https://www.youtube.com/watch?v=R-WRH9hXSpI
 
-### Using Python and a CC2530 module
+### Using a Raspberry Pi and a CC2530 module
 
-While in theory it's possible to skip the esp32, and use Python and a CC2530, you will miss out on most the the cool features that are build in on the esp32-based AP's, like Zero-config Multi-AP's (to extend the reach using multiple access points) and json templates. A rudimentory implementation of the protocol is [here](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/ARM_Tag_FW/cc2531_OEPL). But it's much easier to use an esp32 for the access point, so you can just push jpg's or json templates.
+In theory it's possible to skip the esp32 entirely and use a Raspberry Pi and a CC2530. But you will miss out on most the the cool features that are build in on the esp32-based AP's, like Zero-config Multi-AP's (to extend the reach using multiple access points) and json templates. A rudimentory implementation of the protocol is [here](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/ARM_Tag_FW/cc2531_OEPL). But it's much easier to use one of the esp32-flavours for the access point, so you can just push jpg's or json templates.
