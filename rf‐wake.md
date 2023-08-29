@@ -6,6 +6,8 @@ The M2 tags have an RF-wake feature that uses a burst on 2.4ghz to wake the tag 
 
 The RF-wake is basically a tuned length of pcb trace on a glorified GPIO-pin, it's more inductive coupling than anything else.
 
+To enable rf wake on the tag, use 'set tag config' as a content type af a tag, and enable it in the tag options.
+
 To build this, you will need an esp32 + nRF24L01 module.
 
 ```
