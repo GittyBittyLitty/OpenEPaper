@@ -1,6 +1,6 @@
 ### How much tags can the system handle?
 
-* Using an esp32 or esp32-s2, you will get to about 20-30 tags. If you want more, you can use a esp32-s3 with 16MB flash. A ESP32-C6 based AP recommended for higher tag counts
+* Using an ESP32 or ESP32-S2, you will get to about 30 tags. If you want more, you can use a ESP32-S3 with 16MB flash. A ESP32-C6 based AP is recommended for higher tag counts.
 
 ### How can I extend the reach of an Access Point?
 
