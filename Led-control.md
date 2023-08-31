@@ -19,17 +19,22 @@ Byte 2 - 5 Time between flashes in ms
 ## MODE 2 advanced sequence control 
 
 start of sequence 1
-Byte 1 bit 0 Red channel
-Byte 1 bit 1 Green channel
-Byte 1 bit 2 Blue channel
-Byte 1 bit 3 - 7 time in ms between flashes with a tbd multiplier
-Byte 2 bit 0 - 3 number of repetitions plus 1
-end of sequence 1 
-start of sequence 2
-Byte 2 bit 4 Red channel
-....
-end of sequence 7
 
-Byte 11 bit 4 - 7 delay between restart of the sequence in ms times tbd multiplier, 0 for no repeats 
+        uint8_t interloopdelayfactor = 100;
+        u_int8_t loopdelayfactor = 100;
+        
+        uint8_t c1 = ledcfg[1];
+        uint8_t c2 = ledcfg[4];
+        uint8_t c3 = ledcfg[7];
+        uint8_t loopcnt1 = (ledcfg[2] >> 4) & 0b00001111;
+        uint8_t loopcnt2 = (ledcfg[5] >> 4) & 0b00001111;
+        uint8_t loopcnt3 = (ledcfg[8] >> 4) & 0b00001111;
+        uint8_t loop1delay = ledcfg[2] & 0b00001111;
+        uint8_t loop2delay = ledcfg[5] & 0b00001111;
+        uint8_t loop3delay = ledcfg[8] & 0b00001111;
+        uint8_t ildelay1 = ledcfg[3];
+        uint8_t ildelay2 = ledcfg[6];
+        uint8_t ildelay3 = ledcfg[9];
+        uint8_t grouprepeats = ledcfg[11];
 
-## MODE 2 - 15 are reserved for future use
+## MODE 3 - 15 are reserved for future use
