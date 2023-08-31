@@ -16,3 +16,15 @@ The flasher scripts for use with these serial ports can be found [here](https://
 
 Checkout ATC1441's 88MZ100 page [here](https://github.com/atc1441/88MZ100)!
 
+### mac settings
+
+Since the Custom firmware and Station is working on a MAC based identification it is needed to set a custom MAC to your Display. To do so you can either change a default one in the main.c at "SW_DEFAULT_MAC" before compiling or you can edit the compiled main.bin at an offset of 0x148 (8 following bytes, reversed order) via an HEX Editor Like [HxD](https://mh-nexus.de/en/hxd/). This set MAC will be used on first Boot by the Firmware to write it at the correct position in flash. Changing it in the OTA file will not change the MAC. To make it easy, there is patch_mac.py to do the patching for you.
+
+### Complete instruction to flash a 7.4" tag with a USB-to-TTL module
+
+Connect the wires as above. From the \OpenEPaperLink\Tag_Flasher folder, run:
+```
+patch_mac.py -mac 028E204A7438 ..\ARM_Tag_FW\88MZ100_OpenEpaperLink_7.4\88MZ100_7.4_BETA-0.3.bin
+88MZ100-Serial-Flasher.py COM27 write_flash ..\ARM_Tag_FW\88MZ100_OpenEpaperLink_7.4\88MZ100_7.4_BETA-0.3.bin
+```
+Of course, replace 028E204A7438 with the actual mac of the tag (see reverse side), and replace COM27 with the port of your USB-to-TTL module.
