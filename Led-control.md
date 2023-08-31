@@ -10,14 +10,13 @@ the first 4 bits will describe the mode of the led control. The interpretation o
 
 the second 4 bytes are the duration of the led flashes in millisecond where 0 is mapped to half a ms and 15 is mapped to no off time. 15 WILL RUIN YOUR BATTERY LIFE. Everything higher than 3ms has a diminishing effect to visibility and 2ms is recommended as the bes compromise between power consumption and visibility.
 
-## MODE 0 normal flashing
-(pwm migh not be possibe)
-Byte 1 Red channel
-Byte 2 Green channel
-Byte 3 Blue channel
-Byte 4 - 7 Time between flashes in ms 
+## MODE 0 OFF
 
-## MODE 1 advanced sequence control 
+## MODE 1 normal flashing
+Byte 1 RGB 332 color data
+Byte 2 - 5 Time between flashes in ms 
+
+## MODE 2 advanced sequence control 
 
 start of sequence 1
 Byte 1 bit 0 Red channel
