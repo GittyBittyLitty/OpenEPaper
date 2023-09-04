@@ -40,7 +40,7 @@ Parameters:
 
 optional, `alignment`: 0: left, 1: center, 2: right
 
-Then entering coordinates, take note of the following: The small bitmap fonts have their origin at the left bottom corner. The vlw bitmap fonts have their origin at the top left. And the origin of the truetype fonts is as much as possible at the baseline, but that can differ depending on the font. So, it's a bit trial and error.
+When entering coordinates, take note of the following: The small bitmap fonts have their origin at the left bottom corner. The vlw bitmap fonts have their origin at the top left. And the origin of the truetype fonts is as much as possible at the baseline, but that can differ depending on the font. So, it's a bit trial and error.
 
 `fontname`: one of the following fonts:
 
