@@ -1,5 +1,3 @@
-# THIS IS STILL WIP AND THE API IS NOT STABLE MAY NOT EVEN BE IMPLEMENTED
-
 The led of NRF based tags can be controlled by sending a command with the id 3 to the tag.
 
 The led is controlled by the extended command data(12 Bytes)
