@@ -1,6 +1,6 @@
 # THIS IS STILL WIP AND THE API IS NOT STABLE MAY NOT EVEN BE IMPLEMENTED
 
-The led of NRF based tags can be controlled by sending a command with the id 100 to the tag.
+The led of NRF based tags can be controlled by sending a command with the id 3 to the tag.
 
 The led is controlled by the extended command data(12 Bytes)
 
@@ -10,13 +10,7 @@ the first 4 bits will describe the mode of the led control. The interpretation o
 
 the second 4 bytes are the duration of the led flashes in millisecond where 0 is mapped to half a ms and 15 is mapped to no off time. 15 WILL RUIN YOUR BATTERY LIFE. Everything higher than 3ms has a diminishing effect to visibility and 2ms is recommended as the bes compromise between power consumption and visibility.
 
-## MODE 0 OFF
-
-## MODE 1 normal flashing
-Byte 1 RGB 332 color data
-Byte 2 - 5 Time between flashes in ms 
-
-## MODE 2 advanced sequence control 
+## MODE 0 advanced sequence control 
 
 start of sequence 1
 
@@ -37,4 +31,4 @@ start of sequence 1
         uint8_t ildelay3 = ledcfg[9];
         uint8_t grouprepeats = ledcfg[11];
 
-## MODE 3 - 15 are reserved for future use
+## MODE 1 - 15 are reserved for future use and are used for off at the moment
