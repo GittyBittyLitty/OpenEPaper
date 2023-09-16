@@ -40,7 +40,11 @@ Nameoftag: The name of the tag as found in tag_types.h
 Examples:
 
 001_combined_tag_stock_015_SOLUM_29_SSD1619.bin
+Firmware for a 2.9" ZBS based tags with no mods to be put on the tag with version 15 
+
 
 198_ota_ap_stock_016_ESP32_C6
+C6 AP update firmware version 16
 
 051_full_tag_015_SOLUM_M3_BWR_29.bin
+Firmware to flash a M3 2.9" tag with version 15
