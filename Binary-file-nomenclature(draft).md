@@ -21,33 +21,28 @@ OpenEPaperLink_Nano_AP_full.bin
 
 ***
 
-**Tagid_fullorota_tagorap_custom_version_nameoftag.bin**
+**nameoftag-tagorap-custom-version-tagid-fullorota.bin**
 
 ***
 
-Tagid: The id of the tag as found in tag_types.h, always 3 digit
-
-Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field should be "combined"
+Nameoftag: The name of the tag as found in tag_types.h
 
 Tagorap: If this is firmware for tag operation, this field is "tag", if it is used as an AP, it should be "AP". If the ESP firmware(excluding C6) gets converted to this nomenclature down the line, it could be "esp" for that
 
 Custom: "stock" for stock firmware. For custom firmware, for example bme280 => "bme280"
 
+Tagid: The id of the tag as found in tag_types.h, in Hex always 2 digits
+
 Version: The version of the firmware in decimal format, always 3 digit
 
-Nameoftag: The name of the tag as found in tag_types.h
+Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field is not present
 
 Examples:
 
-001_combined_tag_stock_015_SOLUM_29_SSD1619.bin
+SOLUM_29_SSD1619-tag-stock-015-01.bin
 
 Firmware for a 2.9" ZBS based tags with no mods to be put on the tag with version 15 
 
+SOLUM_M3_BWR_29-tag-stock-016-33-full.bin
 
-198_ota_ap_stock_016_ESP32_C6
-
-C6 AP update firmware version 16
-
-051_full_tag_015_SOLUM_M3_BWR_29.bin
-
-Firmware to flash a M3 2.9" tag with version 15
+Firmware to flash a M3 2.9" tag with version 16
