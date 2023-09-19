@@ -6,19 +6,19 @@ An OpenEpaperLink installation consists of different epaper tags, wirelessly con
 
 The following build environments are available. If you build one of these AP's, you can easily upload the firmware via https://install.openepaperlink.de, and update new firmware releases over the air via the webinterface of the AP, without having to install Platform.io and Visual Studio Code.
 
-| name                   | Simple AP     | Mini AP           | Nano AP       | Yellow AP     | AP and flasher |
-| ---------------------- | ------------- | ----------------- | ------------- | ------------- | -------------- |
-| **based on**               | esp32         | esp32-s2          | esp32-s2      | esp32-s3      | esp32-s3       |
-| **radio**                  | Segmented / 1.54” / 2.9” | Segmented tag     | 1.54” tag     | esp32-c6      | 1.54” tag      |
-| **psram**                  | no            | 2MB               | 2MB           | 8MB           | 8MB            |
-| **flash size**             | 4 MB          | 4MB               | 4MB           | 16MB          | 16MB           |
-| **extras**                 | no display    | segmented display | 1.54” display | TFT display   | 1.54” display  |
-| **Maximum amount of tags** | About 30      | About 30          | About 30      | a few hundred | a few hundred  |
-| **maximum tag size**       | 2.9”          | any size          | any size      | any size      | any size       |
-|                        |               |                   |               |               |                |
-| **design by**              | nic           | jelmer            | atc1441       | atc1441       | jelmer         |
-| **link/pcb/case design**             |             | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20Mini%20AP)    | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/2.9-1.54%20NanoAP%20by%20ATC1441)          | [more info](https://www.github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/Yellow%20AP%20by%20ATC1441)          | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20AP%20and%20Flasher)           |
-| **note**              | Because of lack of psram, not recommended | An improved version is also [available ready made, or as DIY kit, on Tindie](https://www.tindie.com/stores/electronics-by-nic/) |             |             | Includes interface to flash tags    |
+| name                   | Simple AP     | Mini AP v2        | Nano AP       | Yellow AP     | Mini AP v3    | AP and flasher |
+| ---------------------- | ------------- | ----------------- | ------------- | ------------- | ------------- | -------------- |
+| **based on**               | esp32         | esp32-s2          | esp32-s2      | esp32-s3      | esp32-s3      | esp32-s3       |
+| **radio**                  | Segmented / 1.54” / 2.9” | Segmented tag     | 1.54” tag     | esp32-c6      | esp32-c6      | 1.54” tag      |
+| **psram**                  | no            | 2MB               | 2MB           | 8MB           | 8MB           | 8MB            |
+| **flash size**             | 4 MB          | 4MB               | 4MB           | 16MB          | 16MB          | 16MB           |
+| **extras**                 | no display    | segmented display | 1.54” display | TFT display   | TFT display   | 1.54” display  |
+| **Maximum amount of tags** | About 30      | About 30          | About 30      | a few hundred | a few hundred | a few hundred  |
+| **maximum tag size**       | 2.9”          | any size          | any size      | any size      | any size      | any size       |
+|                        |               |                   |               |               |                |                |
+| **design by**              | nic           | jelmer            | atc1441       | atc1441       | nic           | jelmer         |
+| **link/pcb/case design**             |             | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20Mini%20AP)    | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/2.9-1.54%20NanoAP%20by%20ATC1441)          | [more info](https://www.github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/Yellow%20AP%20by%20ATC1441)          | [more info](https://github.com/nlimper/Mini-AP-v3) | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20AP%20and%20Flasher)           |
+| **note**              | Because of lack of psram, not recommended | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) |             |             | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) | Includes interface to flash tags    |
 
 https://www.youtube.com/watch?v=Etonkolz9Bs
 
