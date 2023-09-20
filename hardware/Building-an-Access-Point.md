@@ -35,6 +35,16 @@ Simplified circuit diagram
 A video showing how to build the mini AP kit:
 https://www.youtube.com/watch?v=R-WRH9hXSpI
 
+### Building your own AP
+
+If you build your own AP, there are a few points to keep in mind:
+
+If you use the same components as an existing AP, try to use the same pinout if you want to have ota
+
+When using a C6 as an AP, please copy the pinout of the mini AP v3 or yellow AP to be able to update the C6 via the other ESP32
+
+Always try to use at least a 16MB flash 8MB ram ESP32(S3) module
+
 ### Using a Raspberry Pi and a CC2530 module
 
 In theory it's possible to skip the esp32 entirely and use a Raspberry Pi and a CC2530. But you will miss out on most the the cool features that are build in on the esp32-based AP's, like Zero-config Multi-AP's (to extend the reach using multiple access points) and json templates. A rudimentory implementation of the protocol is [here](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/ARM_Tag_FW/cc2531_OEPL). But it's much easier to use one of the esp32-flavours for the access point, so you can just push jpg's or json templates.
