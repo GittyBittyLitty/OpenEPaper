@@ -31,16 +31,16 @@ Tagorap: If this is firmware for tag operation, this field is "tag", if it is us
 
 Tagid: The id of the tag as found in tag_types.h, in Hex always 2 digits
 
-Version: The version of the firmware in decimal format, always 3 digit
+Version: The version of the firmware in decimal format, always 4 digit
 
 Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field is not present
 
 Examples:
 
-SOLUM_29_SSD1619-tag-01-015.bin
+SOLUM_29_SSD1619-tag-01-0015.bin
 
 Firmware for a 2.9" ZBS based tags with no mods to be put on the tag with version 15 
 
-SOLUM_M3_BWR_29-tag-33-016-full.bin
+SOLUM_M3_BWR_29-tag-33-0016-full.bin
 
 Firmware to flash a M3 2.9" tag with version 16
