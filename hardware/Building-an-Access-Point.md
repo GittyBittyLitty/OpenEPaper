@@ -33,6 +33,7 @@ You can skip many of the steps in the video if you buy tags with pre-flashed fir
 
 ### Example: homemade access point with enameled copper wire  
 If you want to make your own AP without using one of the available ready-made options, you can do this by soldering some wires to a [[segmented tag|Segmented-Tag-SLT‐EM007-UK-version]]
+
 [<img width="250" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/746d78a4-6981-4676-a377-5b691b001f51">](https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/746d78a4-6981-4676-a377-5b691b001f51) 
 
 Simplified circuit diagram
