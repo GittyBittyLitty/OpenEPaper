@@ -1,5 +1,3 @@
-## Access Point pinouts
-
 In this table, you will find the pinouts for connecting an access point, for the different build environments.
 
 | name | Simple AP | Mini AP | Nano AP | Yellow AP | AP and flasher | ESP32-C6 |
