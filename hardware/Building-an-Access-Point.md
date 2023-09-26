@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=R-WRH9hXSpI
 ### Designing your own AP
 
 If you design your own AP, there are a few points to keep in mind:
-If you use the same components as an existing AP, try to use the same pinout if you want to have OTA. When using a ESP32-C6 as an AP, please copy the pinout of the Mini AP v3 or Yellow AP to be able to flash the ESP32-C6 via the other ESP32. Use a 16MB flash and 8MB ram ESP32-S3 module. For the ESP32-C6, 4MB flash will do.
+If you use the same components as an existing AP, try to use the same pinout if you want to have OTA. When using a ESP32-C6 as an AP, please copy the pinout of the Mini AP v3 or Yellow AP to be able to flash the ESP32-C6 via the other ESP32. Use a 16MB flash and 8MB ram ESP32-S3 module. For the ESP32-C6, 4MB flash will do. The pinouts for the different build environments are listed [[on this page|Access-point-pinouts]]
 
 ### Why do I need an ESP32-S3 *and* a ESP32-C6?
 
