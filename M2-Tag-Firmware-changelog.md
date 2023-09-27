@@ -23,10 +23,15 @@ Note that buttons are detected by a small capacitor across the button on P1.0. I
 New commands:
 
 0x05 - Remove all preloaded/cached images
+
 0x06 - Fast slideshow mode
+
 0x07 - Medium speed slideshow
+
 0x08 - Slow slideshow mode
+
 0x09 - Glacial slideshow mode
+
 0x0F - Exit slideshow mode (enter normal mode)
 
 After issueing one of the 'slideshow' commands, the tag will reboot into 'slideshow mode'. The tag will refuse to enter slideshow mode if no applicable 'slideshow'-type images are preloaded.
