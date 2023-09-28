@@ -1,3 +1,7 @@
+## 2.2 - RFW patch
+- Discovered new wake-reason register in radio memory space
+- Added RF Wake messages to AP and associated preload screens
+
 ## 2.2 - Buttons and Preload ## 
 
 - Preloaded images for buttons are now supported
