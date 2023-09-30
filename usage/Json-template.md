@@ -31,6 +31,7 @@ Result:
 ## Text
 * `{ "text": [x, y, "text", "fontname", color] }`
 * `{ "text": [x, y, "text", "fontname", color, alignment] }`
+* `{ "text": [x, y, "text", "fontname", color, alignment, size] }`
 
 ### Templates
 When displaying text on a tag there is an option to insert template variables into the text.
@@ -87,6 +88,7 @@ Then the values of `c` and `d` can be used inside the JSON template file as `{.a
  - `height`: Height in pixels
  - `"text"`: Text to display
  - `"fontname"`: Name of font -> see `Fonts` section further down
+ - `size`: Font size
  - `color`: One of `0` (white), `1` (black) and `2` (red)
  - `alignment`: One of `0` (left), `1` (center) and `2` (right)
 
