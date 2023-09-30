@@ -73,6 +73,8 @@ The endpoint `http://192.168.5.6/rest/state` returns a JSON:
 
 Then the values of `c` and `d` can be used inside the JSON template file as `{.a.b.0.c}` and `{.a.b.1.d}` respectively.
 
+> Note that the returned JSON of the endpoint should be as small as possible due to the constrained resources on the AP. Currently the JSON is limited to 1000 bytes in size. One possibility to optimize the code would be to create a filter from the given JSON template variables, but then the JSON template file would need to be parsed twice, once for filter creation and once more for variable replacement.
+
 ## Graphics
 * `{ "box": [x, y, width, height, color] }`
 * `{ "line": [x1, y1, x2, y2, color] }`
