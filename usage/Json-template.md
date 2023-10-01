@@ -46,11 +46,13 @@ There is also an option to set system variables with custom tag data (documentat
 
 Here is a list of possible system variables:
 
-|Name|Description|
-|----|-----------|
-| ap_ip | Access Point ip address |
-| ap_ch | Access Point channel |
-| ap_tagcount | Access Point tag count |
+|Name|Description|Example|
+|----|-----------|-------|
+| ap_ip | Access Point ip address | `192.168.1.5` |
+| ap_ch | Access Point channel | `11` |
+| ap_tagcount | Access Point tag count | `42` |
+| ap_date | Current date | `20-05-2023` |
+| ap_time | Current time | `06:27:54` |
 
 
 #### JSON variables
