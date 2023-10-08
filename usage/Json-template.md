@@ -82,8 +82,11 @@ There is also support for single math operations (`+`, `-`, `*` and `/`). You ca
 
 ## Graphics
 * `{ "box": [x, y, width, height, color] }`
+* `{ "rbox": [x, y, width, height, corner-radius, color] }`
 * `{ "line": [x1, y1, x2, y2, color] }`
 * `{ "triangle": [x1, y1, x2, y2, x3, y3, color] }`
+* `{ "circle": [x, y, radius, color] }`
+
 
 ## Parameters
  - `x`: X pixel coordinate (`x1`, `x2` and `x3` being multiple positions)
