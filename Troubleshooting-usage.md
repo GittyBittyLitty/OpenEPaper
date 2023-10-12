@@ -33,3 +33,15 @@ Try the following steps.
 - Unfortunately, the only way to get a tag firmware (`Tag_FW_xx.yy.bin`) onto the tag is flashing via the tag contacts
   - The required jig depends on the tag
   - More information on [Tag Flasher](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Tag_Flasher)
+
+## Tag is not working after Battery Change
+### Situation
+- Batteries of a tag were replaced, but tag is not starting (e.g. showing the previous display content)
+- Even shorting the battery contacts won't help
+
+### Solution
+- Try to insert the batteries all in one
+  - see [Getting started - Battery insert](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/Hardware/OpenEPaperLink%20Mini%20AP/Getting%20Started.md#adding-tags)
+  - at 12:25 min of [ESP32 controlled E-Paper price tags The OpenEPaperLink startup guide](https://youtu.be/Etonkolz9Bs?si=11eEj-10Ghm8n1p5&t=743)
+
+
