@@ -44,4 +44,12 @@ Try the following steps.
   - see [Getting started - Battery insert](https://github.com/jjwbruijn/OpenEPaperLink/blob/master/Hardware/OpenEPaperLink%20Mini%20AP/Getting%20Started.md#adding-tags)
   - at 12:25 min of [ESP32 controlled E-Paper price tags The OpenEPaperLink startup guide](https://youtu.be/Etonkolz9Bs?si=11eEj-10Ghm8n1p5&t=743)
 
+## Custom Device Name for Wifi
+### Situation
+- OpenEPaperLink AP lists itself on the wifi as "OpenEPaperLink-xyz".
+- Plan is to have a custom name for it.
 
+### Solution
+- Navigate to the AP settings (gear icon)
+- Change `Alias` unter _Access Point config_ to desired name e.g., `epaperap` (shorter)
+- Reboot AP
