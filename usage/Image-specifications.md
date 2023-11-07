@@ -5,7 +5,7 @@ To ensure the image is displayed correctly without distortion, it is essential t
 
 When incorporating text in images, avoid using anti-aliasing. Rendering fonts without anti-aliasing can be challenging for some libraries. A workaround is to start with an indexed colored image that uses a palette consisting of white, black, and red. By drawing the text on this indexed colored image and subsequently converting it to a 24-bit RGB image, you get rid of the antialiassing. An example demonstrating this technique can be found in the [[Push external image|Image-upload]] article.
 
-When saving the image file, it is recommended to use the maximum or near maximum JPEG quality. This ensures that the image employs 4:4:4 quantization, which maintains sharp transitions between red and white without introducing artifacts. Lower quality JPEGs often use 4:2:0 quantization, which can result in undesirable artifacts and less crisp transitions between colors.
+When saving the image file, it is recommended to use the maximum or near maximum JPEG quality. This ensures that the image employs 4:4:4 [[subsampling|https://en.wikipedia.org/wiki/Chroma_subsampling]], which maintains sharp transitions between red and white without introducing artifacts. Lower quality JPEGs often use 4:2:0 subsampling, which can result in undesirable artifacts and less crisp transitions between colors.
 
 To do this in GIMP, under Export (as jpeg) open Advanced Options and uncheck Progressive and select 4:4:4 from Subsampling.
 
