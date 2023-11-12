@@ -13,7 +13,7 @@ Make sure to include these parameters in the POST request to properly specify th
 
 A demo script in python to generate the image and push it to a tag:
 
-```
+```python
 import requests
 from PIL import Image, ImageDraw, ImageFont
 
