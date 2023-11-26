@@ -36,5 +36,5 @@ In theory, it's possible to reflash a ZigBee coordinator with firmware that enab
  * Overwrite `tagDB.json` inside the `current` folder
  * Reboot the AP (by power cycling or physical reboot button, do not use the reboot option in the website because that will save the current DB first) 
 
-### Whay does the tag react slowly? How does the timing of the tag communication works?
+### Why does the tag react slowly? How does the timing of the tag communication work?
 See [[Timing of the tags|tag-protocol-timing]] for an explanation of the way the tag communicates with an Access Point.
