@@ -11,6 +11,9 @@ Second, if the tag doesn't get any reply of the access point (because it is out 
 
 You can see the checkins in the webinterface: at 'last seen' is will display the time since the last checkin, and at a checkin, the tag card on the website flashes briefly.
 
+So because of the restrictions on battery usage, it's not possible to make the tag react in real time. 
+Most of the time, the delay will be about 40-60 seconds. 
+
 ## AP settings
 ### "Maximum sleep"
 To save extra battery, in the AP settings, you can set the 'Maximum sleep'. If for example the maximum sleep is set to 1 hour, and you display the current date on a tag, the tag is set to sleep for one hour (or until midnight, whatever is shorter). During that hour, the tag is unreachable (as the date will not change). The actual sleep time is dependant on the settings of the selected content type.
@@ -23,6 +26,3 @@ If you set the setting of "no updates between", all tags will sleep and not chec
 
 ### "Shorten latency during config"
 Lastly, there is a "shorten latency during config"-setting. If set to "yes", all the above settings are ignored and sleep time is set to 40 sec while a websocket is connected. If using [[Home Assistant|Home-assistant]], a websocket is always connected, so the setting should be set to "no" to avoid the tags sleeping only 40 sec all the time.
-
-So because of the restrictions on battery usage, it's not possible to make the tag react in real time. 
-Most of the time, the delay will be about 40-60 seconds. 
