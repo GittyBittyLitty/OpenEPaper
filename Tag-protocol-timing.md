@@ -1,3 +1,4 @@
+## Protocol explained
 Main priority when designing the protocol between the tags and the access point, was to be as efficient with battery usage was possible. Both listening and sending information is very resource intensive for the tag, so, it does that as little as possible. The tags spends most of the time sleeping. 
 
 In short, the protocol works as follows: Once every 40 seconds, the tag sends a very short message to the AP (the 'checkin'), to let it know that it is still alive. The tag listens about 5(!) milliseconds if it gets a reply from the AP. Within that time, the AP lets the tag know if it has new information or not. If the AP has new information, the tag initiates a request for the information (most of the time, a new image to display), and the AP sends that data.
@@ -10,6 +11,18 @@ Second, if the tag doesn't get any reply of the access point (because it is out 
 
 You can see the checkins in the webinterface: at 'last seen' is will display the time since the last checkin, and at a checkin, the tag card on the website flashes briefly.
 
+## AP settings
+### "Maximum sleep"
 To save extra battery, in the AP settings, you can set the 'Maximum sleep'. If for example the maximum sleep is set to 1 hour, and you display the current date on a tag, the tag is set to sleep for one hour (or until midnight, whatever is shorter). During that hour, the tag is unreachable (as the date will not change). The actual sleep time is dependant on the settings of the selected content type.
 
-So because of the restrictions on battery usage, it's not possible to make the tag react in real time. Most of the time, the delay will be about 40-60 seconds. 
+### "TTL - Time-to-live"
+There is also a setting per tag, "ttl" ("time-to-live"). This setting is used to make it possible to have different sleep timew on each tag. If you set "ttl" to a longer time than the "maximum sleep", the "ttl" is shortened to the "maximum sleep" time. Default "ttl" is 0 (40 seconds). The "ttl" is set in minutes.
+
+### "No updates between"
+If you set the setting of "no updates between", all tags will sleep and not check in for that timespan. Meaning, if you set a timespan, there is no way of waking up the tags during that time.
+
+### "Shorten latency during config"
+Lastly, there is a "shorten latency during config"-setting. If set to "yes", all the above settings are ignored and sleep time is set to 40 sec while a websocket is connected. If using [[Home Assistant|Home-assistant]], a websocket is always connected, so the setting should be set to "no" to avoid the tags sleeping only 40 sec all the time.
+
+So because of the restrictions on battery usage, it's not possible to make the tag react in real time. 
+Most of the time, the delay will be about 40-60 seconds. 
