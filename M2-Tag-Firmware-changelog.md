@@ -5,8 +5,7 @@
 - Improved power consumption for UC8151 tags (sleep was broken)
 - Low-voltage detection for UC8151 now works (below 2.5 volts)
 - Removed dead code, unused BMP handlers
-
-- Bugfix that would sometimes cause failed OTA updates if the update was a certain size
+- Fixed a bug that would sometimes cause failed OTA updates if the update was a certain size (thanks @atc1441)
 
 ## 2.2 - RFW patch
 - Discovered new wake-reason register in radio memory space
