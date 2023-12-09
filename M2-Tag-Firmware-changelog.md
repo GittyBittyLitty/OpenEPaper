@@ -1,3 +1,13 @@
+## 2.4 - Settings and EEPROM Loader ##
+- It's now possible to 'clear' the tag settings; this can be done if the tag is power-cycled during the screen's first refresh
+- Tag settings moved to eeprom instead of infopage, to avoid potential corruption
+- Optional EEPROM-loader, to download/upload images from the EEPROM for slideshow purposes
+- Improved power consumption for UC8151 tags (sleep was broken)
+- Low-voltage detection for UC8151 now works (below 2.5 volts)
+- Removed dead code, unused BMP handlers
+
+- Bugfix that would sometimes cause failed OTA updates if the update was a certain size
+
 ## 2.2 - RFW patch
 - Discovered new wake-reason register in radio memory space
 - Added RF Wake messages to AP and associated preload screens
