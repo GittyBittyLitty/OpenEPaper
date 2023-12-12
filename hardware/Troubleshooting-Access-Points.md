@@ -2,6 +2,10 @@
 
 When you make your own Access Point consisting of an ESP32 or ESP32-S2, and a epaper tag, some things can go wrong. This page lists the most common errors.
 
+## Package loss/time out errors at the WiFi connection
+
+Disable 'BSS Transition' on a Unify WiFi Access Point, because enabling seems to cause this. The WiFi stack of the esp32 is very simple, so sophisticated WiFi protocol enhancements might confuse it.
+
 ## Wiring errors
 
 Pay very good attention on the correct wiring. If you use the pins as predefined in platformio.ini, you will be able to do OTA updates, which saves you a lot of time.
