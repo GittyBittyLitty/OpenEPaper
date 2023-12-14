@@ -18,4 +18,5 @@ Look at the Manufacturer, used Display and Size
 - Manufacturer: Solum
 - Display: SSD1619
 - Size: 2.9"
+
 The Firmware File we need is SOLUM_29_SSD1619-01-00XX.bin (XX being the version number)
