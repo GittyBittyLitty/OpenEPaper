@@ -19,7 +19,7 @@ Most of the time, the delay will be about 40-60 seconds.
 To save extra battery, in the AP settings, you can set the 'Maximum sleep'. If for example the maximum sleep is set to 1 hour, and you display the current date on a tag, the tag is set to sleep for one hour (or until midnight, whatever is shorter). During that hour, the tag is unreachable (as the date will not change). The actual sleep time is dependant on the settings of the selected content type.
 
 ### "TTL - Time-to-live"
-There is also a setting per tag, "ttl" ("time-to-live"). This setting is used to make it possible to have different sleep timew on each tag. If you set "ttl" to a longer time than the "maximum sleep", the "ttl" is shortened to the "maximum sleep" time. Default "ttl" is 0 (40 seconds). The "ttl" is set in minutes.
+There is also a setting per tag, "ttl" ("time-to-live"). This setting is used to make it possible to have different sleep times on each tag. If you set "ttl" to a longer time than the "maximum sleep", the "ttl" is shortened to the "maximum sleep" time. Default "ttl" is 0 (40 seconds). The "ttl" is set in minutes.
 
 ### "No updates between"
 If you set the setting of "no updates between", all tags will sleep and not check in for that timespan. Meaning, if you set a timespan, there is no way of waking up the tags during that time.
