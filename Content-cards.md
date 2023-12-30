@@ -16,7 +16,7 @@
 * 15- Send custom LUT
 * 16- Buienradar
 * 17- Send Command
-18- Set Tag Config
-19- Json template 
-20- Display a copy
-21- Access point info
+* 18- Set Tag Config
+* 19- Json template 
+* 20- Display a copy
+* 21- Access point info
