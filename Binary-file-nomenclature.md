@@ -21,7 +21,7 @@ OpenEPaperLink_Nano_AP_full.bin
 
 ***
 
-**nameoftag-tagorap-tagid-version-fullorota.bin**
+**nameoftag-tagorap-fullorota-version.bin**
 
 ***
 
@@ -29,18 +29,16 @@ Nameoftag: The name of the tag as found in tag_types.h
 
 Tagorap: If this is firmware for tag operation, this field is "tag", if it is used as an AP, it should be "AP". If the ESP firmware(excluding C6) gets converted to this nomenclature down the line, it could be "esp" for that
 
-Tagid: The id of the tag as found in tag_types.h, in Hex always 2 digits
+Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field is not present
 
 Version: The version of the firmware in decimal format, always 4 digit
 
-Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field is not present
-
 Examples:
 
-SOLUM_29_SSD1619-tag-01-0015.bin
+SOLUM_29_SSD1619-tag-0015.bin
 
 Firmware for a 2.9" ZBS based tags with no mods to be put on the tag with version 15 
 
-SOLUM_M3_BWR_29-tag-33-0016-full.bin
+SOLUM_M3_BWR_29-tag-full-0016.bin
 
 Firmware to flash a M3 2.9" tag with version 16
