@@ -35,10 +35,10 @@ Version: The version of the firmware in hex format, always 2 digit
 
 Examples:
 
-SOLUM_29_SSD1619-tag-15.bin
+SOL_M2_29_SSD_15.bin
 
 Firmware for a 2.9" ZBS based tags with no mods to be put on the tag with version 15 
 
-SOLUM_M3_BWR_29-tag-full-16.bin
+SOL_M3_Uni_full_16.bin
 
 Firmware to flash a M3 2.9" tag with version 16
