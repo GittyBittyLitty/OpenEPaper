@@ -31,7 +31,7 @@ Tagorap: If this is firmware for tag operation, this field is "tag", if it is us
 
 Fullorota: Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be "full" or "ota". If not, this field is not present
 
-Version: The version of the firmware in decimal format, always 2 digit
+Version: The version of the firmware in hex format, always 2 digit
 
 Examples:
 
