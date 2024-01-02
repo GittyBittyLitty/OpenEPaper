@@ -32,6 +32,7 @@ Result:
 * `{ "text": [x, y, "text", "fontname", color] }`
 * `{ "text": [x, y, "text", "fontname", color, alignment] }`
 * `{ "text": [x, y, "text", "fontname", color, alignment, size] }`
+* `{ "text": [x, y, "text", "fontname", color, alignment, size, background_color] }`
 
 ### Templates
 When displaying text on a tag there is an option to insert template variables into the text.
