@@ -1,3 +1,6 @@
+## 0025 - Bugfix ##
+- Fixes a bug that would cause corrupted transfers
+
 ## 2.4 - Settings and EEPROM Loader ##
 - It's now possible to 'clear' the tag settings; this can be done if the tag is power-cycled during the screen's first refresh
 - Tag settings moved to eeprom instead of infopage, to avoid potential corruption
