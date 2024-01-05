@@ -8,7 +8,7 @@ In this table, you will find the pinouts for connecting an access point, for the
 | MOSI | 23 | 10 | 39 | - | 7 | - |
 | MISO | 19 | 8 | 33 | - | 6 | - |
 | RESET| 2  | 13 | 37 | 47 | 15 | EN |
-| POWER| 13+15 | - | 16+17+18+21 | -| 0 | - |
+| POWER| 13+15 | 3V3 | 16+17+18+21 | -| 0 | - |
 | TEST | -  | 12 | 36 | - | 17 | - |
 | TXD  | 17 | 7 | 35 | 17 | 16 | 2 |
 | RXD  | 16 | 6 | 34 | 18 | 18 | 3 |
@@ -23,7 +23,6 @@ In this table, you will find the pinouts for connecting an access point, for the
 | TFT DC | - | - | - | 11 | - | - |
 | TFT RST | - | - | - | 1 | - | - |
 | GND | GND | GND | GND | GND | GND | GND |
-| 3V3 | - | 3V3 | - | 3V3 | - | 3V3 |
 
 Pins in the list for the esp32-c6 are to be connected to the corresponding pins on the Yellow AP, except for the led pins which are off course seperate.
 For the other environments, the listed pins are te be connected to the corresponding pins on a ZBS-based tag.
