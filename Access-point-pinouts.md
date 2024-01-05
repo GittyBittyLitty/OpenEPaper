@@ -1,6 +1,6 @@
 In this table, you will find the pinouts for connecting an access point, for the different build environments.
 
-| name | Simple AP | Mini AP | Nano AP | Yellow AP | AP and flasher | ESP32-C6 |
+| name | Simple AP | Mini AP v2 | Nano AP | Yellow AP / Mini AP v3| AP and flasher | ESP32-C6 |
 | ---- | --------- | ------- | ------- | --------- | -------------- | ---------|
 | mcu | esp32 | esp32-s2 | esp32-s2 | esp32-s3 | esp32-s3 | |
 | SS   | 5  | 11 | 38 | - | 4 | - |
