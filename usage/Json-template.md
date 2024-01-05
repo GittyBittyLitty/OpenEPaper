@@ -83,12 +83,12 @@ There is also support for single math operations (`+`, `-`, `*` and `/`). You ca
 
 ## Paragraph Text
 A text, bounded by a box. The text flows to the next lines (breaking on spaces, hyphen and CR). Only works for .vlw bitmap fonts. Available from release 2.06 (not released yet)
+
 * `{ "textbox": [x, y, w, h, "text", "fontname" }`
 * `{ "textbox": [x, y, w, h, "text", "fontname", color, background_color] }`
 * `{ "textbox": [x, y, w, h, "text", "fontname", color, background_color, line height] }`
+
 Default `line height` = 1. Try values like `1.25` for a slightly bigger line spacing.
-
-
 
 ## Graphics
 * `{ "box": [x, y, width, height, color] }`
