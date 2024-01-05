@@ -81,6 +81,11 @@ There is also support for single math operations (`+`, `-`, `*` and `/`). You ca
 
 > Note that the returned JSON of the endpoint should be as small as possible due to the constrained resources on the AP. Currently the JSON is limited to 1000 bytes in size. One possibility to optimize the code would be to create a filter from the given JSON template variables, but then the JSON template file would need to be parsed twice, once for filter creation and once more for variable replacement.
 
+## Paragraph Text
+A text, bounded by a box. The text flows to the next lines (breaking on spaces, hyphen and CR).
+* `{ "textbox": [x, y, w, h, "text", "fontname", color, size, background_color] }`
+Only works for .vlw bitmap fonts. Available from release 2.06 (not released yet)
+
 ## Graphics
 * `{ "box": [x, y, width, height, color] }`
 * `{ "rbox": [x, y, width, height, corner-radius, color] }`
