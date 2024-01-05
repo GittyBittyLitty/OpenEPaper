@@ -83,7 +83,7 @@ There is also support for single math operations (`+`, `-`, `*` and `/`). You ca
 
 ## Paragraph Text
 A text, bounded by a box. The text flows to the next lines (breaking on spaces, hyphen and CR).
-* `{ "textbox": [x, y, w, h, "text", "fontname", color, size, background_color] }`
+* `{ "textbox": [x, y, w, h, "text", "fontname", color, background_color] }`
 Only works for .vlw bitmap fonts. Available from release 2.06 (not released yet)
 
 ## Graphics
