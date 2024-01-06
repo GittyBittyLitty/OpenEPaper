@@ -113,34 +113,15 @@ Default `line height` = 1. Try values like `1.25` for a slightly bigger line spa
 
 
 ## Fonts
-### Small (plain text) fonts: 
 
-`glasstown_nbp_tf` 
-![](usage/u8g2_font_glasstown_nbp_tf.png)
-
-`7x14_tf` 
-![](usage/u8g2_font_7x14_tf.png)
-
-`t0_14b_tf`
-![](usage/u8g2_font_t0_14b_tf.png)
-
-If you want to add extra plain text fonts, it's needed to add them in `contentmanager.cpp`. Because flash size is very limited, try to avoid.
-Plain text fonts by https://github.com/olikraus/u8g2
-
-### Big fonts to be used for headings and big numbers:
+### Bitmap fonts:
 
 any fonts in the /fonts folder:
-* `fonts/bahnschrift20` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-* `fonts/bahnschrift30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-* `fonts/bahnschrift70` only `0123456789.`
-* `fonts/calibrib30` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
-* `fonts/calibrib50` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
-* `fonts/calibrib60` for displaying dates: only `ADFJMNOSTWabcdefghijklmnoprstuvwyzä0123456789`
-* `fonts/calibrib80` only `0123456789.°`
-* `fonts/calibrib100` only `0123456789.°`
-* `fonts/calibrib120` only `0123456789.°`
-* `fonts/calibrib150` only `0123456789.°`
-* `fonts/twcondensed20` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
+* `bahnschrift20.vlw` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `bahnschrift30.vlw` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `bahnschrift70.vlw` only `0123456789.`
+* `calibrib30.vlw` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
+* `twcondensed20.vlw` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
 
 If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
 
@@ -151,4 +132,4 @@ If you want to add extra fonts to this list, you can convert them from Truetype 
 Put the truetype font in the /fonts folder. Make sure you select your truetype font file carefully: some are very big, and that will not fit in the file system.
 
 example:
-`{ "text": [0, 10, "Use any font in any size!", "/fonts/Inkfree.ttf", 1, 0, 40] }`
+`{ "text": [0, 10, "Use any font in any size!", "Inkfree.ttf", 1, 0, 40] }`
