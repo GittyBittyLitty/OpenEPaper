@@ -5,12 +5,12 @@ To use Google Apps Script to get all events for the next day and return them via
 * Create a new Google Apps Script project by going to [https://script.google.com](https://script.google.com) and clicking on "New project".
 * Paste the following code into the editor:
 ```js
-function getEventsForNextDay() {
+function getEventsForNextDay(days) {
   var start = new Date();
+  start.setHours(0, 0, 0, 0);
   var end = new Date();
-  // time offset in hours. No need to change this if both your google calendar and access point is set to the right time zone.
-  var time_offset = 0;
-  end.setDate(end.getDate() + 1);
+  if (days == undefined) days = 1;
+  end.setDate(end.getDate() + parseInt(days, 10));
   var calendars = CalendarApp.getAllCalendars();
   var events = [];
   for (var i = 0; i < calendars.length; i++) {
@@ -19,23 +19,26 @@ function getEventsForNextDay() {
     for (var j = 0; j < eventsInCalendar.length; j++) {
       var event = eventsInCalendar[j];
       events.push({
+        calendar: i,
         title: event.getTitle(),
-        start: Math.floor((event.getStartTime().getTime() / 1000)+(time_offset*3600)),
-        end: Math.floor((event.getEndTime().getTime() / 1000)+(time_offset*3600)),
-        location: event.getLocation(),
-        description: event.getDescription()
+        start: Math.floor(event.getStartTime().getTime() / 1000),
+        end: Math.floor(event.getEndTime().getTime() / 1000),
+        isallday: event.isAllDayEvent()
       });
     }
   }
-  // Sort events by start date/time
   events.sort(function(a, b) {
     return a.start - b.start;
   });
   return JSON.stringify(events);
 }
 
-function doGet() {
-  var content = getEventsForNextDay();
+function doGet(e) {
+  if(!e) { 
+    e = {parameter: {days: 1}};
+  }
+  const params = e.parameter;
+  var content = getEventsForNextDay(params.days);
   var output = ContentService.createTextOutput(content);
   output.setMimeType(ContentService.MimeType.JSON);
   return output;
