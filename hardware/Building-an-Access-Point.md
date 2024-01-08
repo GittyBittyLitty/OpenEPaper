@@ -19,7 +19,7 @@ The following build environments are available. If you build one of these AP's, 
 |                        |               |                   |               |               |                |                |
 | **design by**              | nic           | jelmer            | atc1441       | atc1441       | nic           | jelmer         |
 | **link/pcb/case design**             |             | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20Mini%20AP)    | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/2.9-1.54%20NanoAP%20by%20ATC1441)          | [more info](https://www.github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/Yellow%20AP%20by%20ATC1441)          | [more info](https://github.com/nlimper/Mini-AP-v3) | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20AP%20and%20Flasher)           |
-| **note**              | Because of lack of psram, not recommended | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) |             |             | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) | Includes interface to flash tags    |
+| **note**              | Because of lack of psram, not recommended, will also be fully deprecated this year | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) |             |             | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) | Includes interface to flash tags    |
 
 ### Getting started video
 
@@ -48,7 +48,7 @@ https://www.youtube.com/watch?v=R-WRH9hXSpI
 ### Designing your own AP
 
 If you design your own AP, there are a few points to keep in mind:
-If you use the same components as an existing AP, try to use the same pinout if you want to have OTA. When using a ESP32-C6 as an AP, please copy the pinout of the Mini AP v3 or Yellow AP to be able to flash the ESP32-C6 via the other ESP32. Use a 16MB flash and 8MB ram ESP32-S3 module. For the ESP32-C6, 4MB flash will do. The pinouts for the different build environments are listed [[on this page|Access-point-pinouts]]
+If you use the same components as an existing AP, try to use the same pinout if you want to have OTA. When using a ESP32-C6 as an AP, please copy the pinout of the Mini AP v3 or Yellow AP to be able to flash the ESP32-C6 via the other ESP32. Use a 16MB flash and 8MB ram ESP32-S3 module, other configurations are really hard to get working and will not get OTA. For the ESP32-C6, 4MB flash will do. The pinouts for the different build environments are listed [[on this page|Access-point-pinouts]]
 
 ### Why do I need an ESP32-S3 *and* a ESP32-C6?
 
