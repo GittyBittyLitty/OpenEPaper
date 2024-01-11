@@ -1,4 +1,4 @@
-* 0 - Static image
+* 0 - No content
 * 1 - Current date
 * 2 - Count days
 * 3 - Count hours
@@ -20,3 +20,8 @@
 * 19- Json template 
 * 20- Display a copy
 * 21- Access point info
+* 22- Static image
+* 23- Image preload
+* 24- External image
+* 25- Home Assistant
+* 26- Record last event
