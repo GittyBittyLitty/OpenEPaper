@@ -19,7 +19,7 @@ The following build environments are available. If you build one of these AP's, 
 |                        |               |                   |               |               |                |                |
 | **design by**              | nic           | jelmer            | atc1441       | atc1441       | nic           | jelmer         |
 | **link/pcb/case design**             |             | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20Mini%20AP)    | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/2.9-1.54%20NanoAP%20by%20ATC1441)          | [more info](https://www.github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/Yellow%20AP%20by%20ATC1441)          | [more info](https://github.com/nlimper/Mini-AP-v3) | [more info](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/Hardware/OpenEPaperLink%20AP%20and%20Flasher)           |
-| **note**              | Because of lack of psram, not recommended, will also be fully deprecated this year | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) |             |             | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) | Includes interface to flash tags    |
+| **note**              | Because of lack of psram, not recommended, will also be fully deprecated this year |             |             |             | [available ready made or as DIY kit on Tindie](https://www.tindie.com/stores/electronics-by-nic/) | Includes interface to flash tags    |
 
 ### Getting started video
 
