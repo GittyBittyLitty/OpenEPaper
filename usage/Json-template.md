@@ -106,11 +106,20 @@ Default `line height` = 1. Try values like `1.25` for a slightly bigger line spa
  - `"text"`: Text to display
  - `"fontname"`: Name of font -> see `Fonts` section further down
  - `size`: Font size
- - `color`: One of `0` (white), `1` (black) and `2` (red)
+ - `color`: see below
  - `alignment`: One of `0` (left), `1` (center) and `2` (right)
 
 > When entering coordinates, take note of the following: The small bitmap fonts have their origin at the left bottom corner. The vlw bitmap fonts have their origin at the top left. And the origin of the truetype fonts is as much as possible at the baseline, but that can differ depending on the font. So, it's a bit trial and error.
 
+### Color parameter
+
+* 0 or "white": white
+* 1 or "black": black
+* 2 or "red": red
+* 3 or "yellow": yellow (if the tag supports it)
+* 4 or "lightgray" (uses pattern dither, not suitable for small fonts)
+* 5 or "darkgray" (uses pattern dither, not suitable for small fonts)
+* 6 or "pink" (uses pattern dither, not suitable for small fonts)
 
 ## Fonts
 
