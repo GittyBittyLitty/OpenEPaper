@@ -10,23 +10,43 @@ the second 4 bytes are the duration of the led flashes in millisecond where 0 is
 
 ## MODE 0 advanced sequence control 
 
-start of sequence 1
+`0220530A20530A20530A0A00`
 
-        uint8_t interloopdelayfactor = 100;
-        u_int8_t loopdelayfactor = 100;
-        
-        uint8_t c1 = ledcfg[1];
-        uint8_t c2 = ledcfg[4];
-        uint8_t c3 = ledcfg[7];
-        uint8_t loopcnt1 = (ledcfg[2] >> 4) & 0b00001111;
-        uint8_t loopcnt2 = (ledcfg[5] >> 4) & 0b00001111;
-        uint8_t loopcnt3 = (ledcfg[8] >> 4) & 0b00001111;
-        uint8_t loop1delay = ledcfg[2] & 0b00001111;
-        uint8_t loop2delay = ledcfg[5] & 0b00001111;
-        uint8_t loop3delay = ledcfg[8] & 0b00001111;
-        uint8_t ildelay1 = ledcfg[3];
-        uint8_t ildelay2 = ledcfg[6];
-        uint8_t ildelay3 = ledcfg[9];
-        uint8_t grouprepeats = ledcfg[11];
+meaning:
+
+`0-----------------------` mode: 0
+
+`-2----------------------` flash duration (ms; see above)
+
+`--20--------------------` group 1: color in rgb 332 (rrrgggbb)
+
+`----5-------------------` group 1: amount of flashes
+
+`-----3------------------` group 1: flash speed (x10 ms)
+
+`------0A----------------` group 1: delay after this flash group (seconds)
+
+`--------20--------------` group 2: color in rgb 332 (rrrgggbb)
+
+`----------5-------------` group 2: amount of flashes
+
+`-----------3------------` group 2: flash speed (x10 ms)
+
+`------------0A----------` group 2: delay after this flash group (seconds)
+
+`--------------20--------` group 3: color in rgb 332 (rrrgggbb)
+
+`----------------5-------` group 3: amount of flashes
+
+`-----------------3------` group 3: flash speed (x10 ms)
+
+`------------------0A----` group 3: delay after this flash group (seconds)
+
+`--------------------0A--` repeats: how often to repeat sequence of group 1..3
+
+`----------------------00` spare, always 00
+
+
+
 
 ## MODE 1 - 15 are reserved for future use and are used for off at the moment
