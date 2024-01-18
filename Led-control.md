@@ -8,6 +8,9 @@ the first 4 bits will describe the mode of the led control. The interpretation o
 
 the second 4 bits are the duration of the led flashes in millisecond where 0 is mapped to half a ms and 15 is mapped to no off time. 15 WILL RUIN YOUR BATTERY LIFE. Everything higher than 3ms has a diminishing effect to visibility and 2ms is recommended as the bes compromise between power consumption and visibility.
 
+You can send this pattern as a http GET to `/led_flash?mac=000000000000&pattern=000000000000000000000000`
+To stop a running pattern, send an empty pattern: `/led_flash?mac=000000000000`
+
 ## MODE 0 advanced sequence control 
 
 `0220530A20530A20530A0A00`
