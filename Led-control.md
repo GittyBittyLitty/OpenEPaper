@@ -6,7 +6,7 @@ The first Byte is split into two parts:
 
 the first 4 bits will describe the mode of the led control. The interpretation of the following bytes changes per mode.
 
-the second 4 bytes are the duration of the led flashes in millisecond where 0 is mapped to half a ms and 15 is mapped to no off time. 15 WILL RUIN YOUR BATTERY LIFE. Everything higher than 3ms has a diminishing effect to visibility and 2ms is recommended as the bes compromise between power consumption and visibility.
+the second 4 bits are the duration of the led flashes in millisecond where 0 is mapped to half a ms and 15 is mapped to no off time. 15 WILL RUIN YOUR BATTERY LIFE. Everything higher than 3ms has a diminishing effect to visibility and 2ms is recommended as the bes compromise between power consumption and visibility.
 
 ## MODE 0 advanced sequence control 
 
