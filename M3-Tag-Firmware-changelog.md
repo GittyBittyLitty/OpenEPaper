@@ -9,6 +9,9 @@ We haven't checked all types! I have been trying to determine how the tag finds 
 
 If you want to help, dump the UICR from a tag, and let me know what type of tag is is/controller it uses.
 
+## 0025 - LED control ##
+-this firmware finally allows proper led control. This requires an AP update
+
 ## 0024 - Feature parity ##
 This version more or less brings the M3 tags to the feature level of the M2 tags!
 - Slideshows are now working
@@ -20,6 +23,3 @@ This version more or less brings the M3 tags to the feature level of the M2 tags
 - FW-version is now shown in the webinterface (shown as "fw: 36")
 
 Errata: FW still uses GPIOTE for buttons/NFC events. GPIOTE consumes quite a bit more power than should be needed. Turning it off certainly helps, and optimizes power consumption by about 50%, but buttons won't work. GPIOTE is turned off for the 4.3" tags, as they don't have any buttons
-
-## 0025 - LED control ##
--this firmware finally allows proper led control. This requires an AP update
