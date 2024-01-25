@@ -1,11 +1,12 @@
 ## 0026 - Universal FW
-Incorporates Jonas' changes for LED control
-Fixed 4.3" shutdown routine
-All M3 tags should now be able to use the same binary file
-Tag type, EPD type is determined in the 'customer' UICR data as set in factory
+- Incorporates Jonas' changes for LED control
+- Fixed 4.3" shutdown routine
+- All M3 tags should now be able to use the same binary file
+- Tag type, EPD type is determined in the 'customer' UICR data as set in factory
 
 HOWEVER:
 We haven't checked all types! I have been trying to determine how the tag finds out what kind of controller the EPD uses, and I may have gotten it all wrong! I -highly- suggest only updating tags one-at-a-time, and only if you want to try the new features.
+
 If you want to help, dump the UICR from a tag, and let me know what type of tag is is/controller it uses.
 
 ## 0024 - Feature parity ##
