@@ -142,3 +142,11 @@ Put the truetype font in the /fonts folder. Make sure you select your truetype f
 
 example:
 `{ "text": [0, 10, "Use any font in any size!", "Inkfree.ttf", 1, 0, 40] }`
+
+### Rotate Screen
+
+It is possible to rotate the complete display:
+
+`{ "rotate": 0 }`
+
+The possible Values are 0 for default orintation, 1 for 90° , 2 for 180° and 3 for 270°
