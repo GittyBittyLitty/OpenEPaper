@@ -70,7 +70,7 @@ SOL_M3_Uni_full_16.bin
 |ST-GR2900N | 3B3 | `SOL_M2_29_UC_<version>.bin` |
 |ST-GM29XXF | 2D1 | `SOL_M2_29_LT_<version>.bin` |
 |ST-GR42003N2| 483 | `SOL_M2_42_SSD_<version>.bin` ? |
-|ST-GR750BN | 743 | `SOL_M2_75_<full|ota>_<version>.bin` |
+|ST-GR750BN | 743 | `SOL_M2_75_<full\|ota>_<version>.bin` |
 
 ### Full or OTA
 Some tags have different files for OTA and direct to tag flashing. If this this is the case, this part can be `full` or `ota`.
