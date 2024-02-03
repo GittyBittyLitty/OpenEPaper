@@ -34,7 +34,7 @@ The AP's auto update function uses the mapping defined in [`tagotaversions.json`
 | 1.54″‐1.6″ ST-GR160BN | 343 | ? |
 | 1.54″‐1.6″ ST-GR1600N | 163 | ? |
 | 2.2″ EL022H3WRA | B19 | `SOL_M3_Uni_<full\|ota>_<version>.bin` |
-| 2.7″ ST‐GR27000 | 2F3 | ? |
+| 2.7″ ST‐GR27000 | 2F3 | work in progress |
 | 2.9″ EL029D2WRA SubGHz | B23 | not (yet) supported |
 | 2.9″ EL029GSWRN | B27 | work in progress |
 | 2.9″ EL029H3WRA | B29 | `SOL_M3_Uni_<full\|ota>_<version>.bin` |
