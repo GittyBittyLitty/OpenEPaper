@@ -10,8 +10,8 @@ In this table, you will find the pinouts for connecting an access point, for the
 | RESET| 2  | 13 | 37 | 47 | 15 | EN |
 | POWER| 13+15 | 3V3 | 16+17+18+21 | -| 0 | - |
 | TEST | -  | 12 | 36 | - | 17 | - |
-| TXD  | 17 | 7 | 35 | 17 | 16 | 2 |
-| RXD  | 16 | 6 | 34 | 18 | 18 | 3 |
+| Tag RXD / ESP TXD  | 17 | 7 | 35 | 17 | 16 | 2 |
+| Tag TXD / ESP RXD  | 16 | 6 | 34 | 18 | 18 | 3 |
 | led  | 22 | 15 | 15 | 16 | 21 | 22, 23 |
 | neopixel | - | 33 | - | 48 | 48 | - |
 | debug-txd | -| -  | - | 19 | - | 16 |
