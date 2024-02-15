@@ -6,6 +6,7 @@
 * Moved 'settings' and 'profile' to the back of the flash space, to allow universal firmwares in the future
 * Support for *much* larger firmware's in the future
 * MD5 validation for both firmware and images
+* Firmware magic number is validated when doing OTA updates to ensure the correct file is flashed 
 * Simplified EPD driver for UC8159
 * Reduced power consumption
 * Introduces OEPLfs in order to reduce codesize and keep data out of RAM
