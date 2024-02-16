@@ -1,8 +1,9 @@
 ## v0027 - Compression and proper UI fonts ##
+
 * Moved various parts to C++, most parts compiled with -O3
 * Improved stability, watchdog now runs properly
 * Improved icons for no-RF and low battery
-* Common codebase for protocol and  drawing text and icons with M3 firmware
+* Common codebase for protocol and drawing text and icons with M3 firmware
 * Moved 'settings' and 'profile' to the back of the flash space, to allow universal firmwares in the future
 * Support for *much* larger firmware's in the future
 * Software version now correctly reported
