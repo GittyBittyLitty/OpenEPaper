@@ -5,6 +5,8 @@
 * Common codebase for protocol and  drawing text and icons with M3 firmware
 * Moved 'settings' and 'profile' to the back of the flash space, to allow universal firmwares in the future
 * Support for *much* larger firmware's in the future
+* Software version now correctly reported
+* Sending Full DataAvailReq packets works reliably
 * MD5 validation for both firmware and images
 * Firmware magic number is validated when doing OTA updates to ensure the correct file is flashed 
 * Simplified EPD driver for UC8159
