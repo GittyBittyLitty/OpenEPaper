@@ -27,6 +27,7 @@ Please add additional information where possible!
 - [[2.9″ EL029GSWRN|2.9″ EL029GSWRN]]
 - [[4.2″‐ST‐GR4200C|4.2″‐ST‐GR4200C]]
 - [[7.5″ ST‐GR750BN|7.5″ ST‐GR750BN]]
+- [[7.5″ Chroma 74|Chroma-74]]
 - [[13.3″-EL133C2WRN|13.3″-EL133C2WRN]]
 
 ## Access Points
