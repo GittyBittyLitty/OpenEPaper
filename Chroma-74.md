@@ -19,7 +19,7 @@ This tag has been somewhat readily available for some time and multiple DIY proj
 
 At the moment (Feb 2024) the tag is still available from multiple vendors on ebay.  
 
-Several of ads have been active for several months and ads with higher asking prices for multiple years.  
+Several of the ads have been active for several months and ads with higher asking prices for multiple years.  
 
 Even the higher priced units aren't completely outrageous ($44) but are close to the price of a new display from Waveshare.  
 
