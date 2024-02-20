@@ -58,10 +58,10 @@ You would think the ESP32-C6 can do IEEE 801.15.4 as well as WiFi, but the catch
 
 In theory it's possible to skip the esp32 entirely and use a Raspberry Pi and a CC2530. But you will miss out on most the the cool features that are build in on the esp32-based AP's, like Zero-config Multi-AP's (to extend the reach using multiple access points) and json templates. A rudimentory implementation of the protocol is [here](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/ARM_Tag_FW/cc2531_OEPL). But it's much easier to use one of the esp32-flavours for the access point, so you can just push jpg's or json templates.
 
-### S3 PlatformIO build configurations
+### Primary ESP32 AP PlatformIO build configurations
 
 It is **essential** that the correct environment be selected when building and
-flashing the S3 code.
+flashing the ESP32 code.
 
 Please refer to the following table to find the correct environment for your
 AP.
@@ -77,13 +77,13 @@ AP.
 | AP and flasher | OpenEPaperLink_AP_and_Flasher | esp32-s3 | 8MB | 16 MB |
 
 
-### Building S3 firmware from source
+### Building the Primary ESP32 firmware from source
 
 It is only necessary to build the firmware from source if you want to modify it.  Otherwise https://install.openepaperlink.de is the way to go!
 
-The code for an AP's S3 processor is located in the ESP32_AP-Flasher/subdirectory.
+The code for an AP's ESP32 processor is located in the ESP32_AP-Flasher/subdirectory.
 
-The S3 code is a PlatformIO project. If this doesn't mean anything to you see https://https://platformio.org/install for more information and instruction
+The ESP32 code is a PlatformIO project. If this doesn't mean anything to you see https://https://platformio.org/install for more information and instruction
 on now to install it.
 
 Once you have PlatformIO installed you can build the desired image by running
@@ -94,7 +94,7 @@ pio run -e <environment>
 
 Note:  This command is run automatically by the upload target.
 
-### Building and Flashing the S3 file system
+### Building and Flashing the Primary ESP32 file system
 
 If you have not previously flashed your AP using https://install.openepaperlink.de 
 you will need to flash both the file system as will as the firmware image.  
@@ -108,11 +108,62 @@ You can build and flash the file system by running
 pio run -e <environment> -t uploadfs
 ```
 
-### Flashing S3 firmware built from source
+### Flashing the Primary ESP32 firmware built from source
 
-You can build and flash the S3 firmware by running
+You can build and flash the Primary ESP32 firmware by running
 
 ```
 pio run -e <environment> -t upload
+```
+
+### Building the ESP32-C6 PlatformIO Radio firmware from source
+
+Some APs use an esp32-c6 for a radio instead of a segmented tag. 
+
+It is only necessary to build the esp32-c6 firmware from source if you want to modify it.  Otherwise https://install.openepaperlink.de is the way to go!
+
+OpenEPaperLink_esp32_C6_AP is an ESP-IDF (Espressif IoT Development Framework) 
+project.  If this doesn't mean anything to you see https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/#
+
+Once you have IDF in your path you build the code by running idf.py build.
+
+## Flashing the ESP32-C6 PlatformIO Radio firmware built from source
+
+The image is flash to the C6 via the serial port by running idf.py -p <Serial_Port> flash.
+
+During development some flashing time can be saved by running idf.py -p <Serial_Port> app-flash.
+
+## Watching the ESP32-C6 PlatformIO Radio firmware Debug Log 
+
+The debug serial port may be monitored by running idf.py -p <Serial_Port> monitor.
+
+Multiple commands given to idf.py at one time.
+
+For example to build the image, flash it and start monitoring the debug output:
+
+```
+skip@Dell-7040:~/esl/OpenEPaperLink/ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP$ idf.py -p /dev/ttyACM0 build app-flash monitor
+Executing action: all (aliases: build)
+Running ninja in directory /home/skip/esl/OpenEPaperLink/ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP/build
+Executing "ninja all"...
+
+[deleted]
+
+Bootloader binary size 0x5830 bytes. 0x27d0 bytes (31%) free.
+Executing action: app-flash
+
+[deleted]
+
+Executing action: monitor
+Running idf_monitor in directory /home/skip/esl/OpenEPaperLink/ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP
+Executing "/home/skip/.espressif/python_env/idf5.3_py3.8_env/bin/python /home/skip/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c6 --revision 0 --decode-panic backtrace /home/skip/esl/OpenEPaperLink/ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP/build/OpenEPaperLink_esp32_C6.elf -m '/home/skip/.espressif/python_env/idf5.3_py3.8_env/bin/python' '/home/skip/esp/esp-idf/tools/idf.py' '-p' '/dev/ttyACM0'"...
+--- esp-idf-monitor 1.3.4 on /dev/ttyACM0 115200 ---
+--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+2mI ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x15 (USB_UART_HPSYS),boot:0x4c (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40022d86
+0x40022d86: uart_tx_one_char3 in ROM
+...
 ```
 
