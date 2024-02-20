@@ -3,7 +3,7 @@
 An OpenEpaperLink installation consists of different epaper tags, wirelessly connected to one or more Access Points. An access point is made of a esp32-family MCU, and some device that can talk IEEE 802.15.4. This can be a ZBS243-based tag, or better, an esp32-C6.
 You can build one of the different access points models yourself, or you can order a kit or even a ready made one.
 
-### AP Comparisation table
+### AP Comparison table
 
 The following build environments are available. If you build one of these AP's, you can easily upload the firmware to your MCU via https://install.openepaperlink.de, and update new firmware releases over the air via the webinterface of the AP, without having to install Platform.io and Visual Studio Code. Also, you will find binaries of the firmware in the [releases](https://github.com/jjwbruijn/OpenEPaperLink/releases).
 
@@ -32,7 +32,7 @@ The following build environments are available. If you build one of these AP's, 
 You can skip many of the steps in the video if you buy tags with pre-flashed firmware, and a ready made access point.
 
 ### Example: homemade access point with enameled copper wire  
-If you want to make your own AP without using one of the available ready-made options, you can do this by soldering some wires to a [[segmented tag|Segmented-Tag-SLT‐EM007-UK-version]]
+If you want to make your own AP without using one of the available ready-made options, you can do this by soldering some wires to a [[segmented tag|Segmented-Tag-SLT-EM007-UK-version]]
 
 [<img width="250" src="https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/746d78a4-6981-4676-a377-5b691b001f51">](https://github.com/jjwbruijn/OpenEPaperLink/assets/16150580/746d78a4-6981-4676-a377-5b691b001f51) 
 
@@ -57,3 +57,58 @@ You would think the ESP32-C6 can do IEEE 801.15.4 as well as WiFi, but the catch
 ### Can I use a Raspberry Pi and a CC2530 module
 
 In theory it's possible to skip the esp32 entirely and use a Raspberry Pi and a CC2530. But you will miss out on most the the cool features that are build in on the esp32-based AP's, like Zero-config Multi-AP's (to extend the reach using multiple access points) and json templates. A rudimentory implementation of the protocol is [here](https://github.com/jjwbruijn/OpenEPaperLink/tree/master/ARM_Tag_FW/cc2531_OEPL). But it's much easier to use one of the esp32-flavours for the access point, so you can just push jpg's or json templates.
+
+### S3 PlatformIO build configurations
+
+It is **essential** that the correct environment be selected when building and
+flashing the S3 code.
+
+Please refer to the following table to find the correct environment for your
+AP.
+
+| name                   | Simple AP     | Mini AP v2        | Nano AP       | Yellow AP     | Mini AP v3    | AP and flasher | Mini AP v4 |
+| ---------------------- | ------------- | ----------------- | ------------- | ------------- | ------------- | -------------- |----------- |
+| **based on**           | esp32         | esp32-s2          | esp32-s2      | esp32-s3      | esp32-s3      | esp32-s3       | esp32-s3   |   
+| **psram**              | no            | 2MB               | 2MB           | 8MB           | 8MB           | 8MB            | 8MB        |   
+| **flash size**         | 4 MB          | 4MB               | 4MB           | 16MB          | 16MB          | 16MB           | 16MB       |  
+| **Platform IO Environment**  | Simple_AP | OpenEPaperLink_Mini_AP | OpenEPaperLink_Nano_AP | ESP32_S3_16_8_YELLOW_AP | ESP32_S3_16_8_YELLOW_AP | OpenEPaperLink_AP_and_Flasher | OpenEPaperLink_Mini_AP_v4|
+
+### Building S3 firmware from source
+
+It is only necessary to build the firmware from source if you want to modify it.  Otherwise https://install.openepaperlink.de is the way to go!
+
+The code for an AP's S3 processor is located in the ESP32_AP-Flasher/subdirectory.
+
+The S3 code is a PlatformIO project. If this doesn't mean anything to you see https://https://platformio.org/install for more information and instruction
+on now to install it.
+
+Once you have PlatformIO installed you can build the desired image by running
+
+```
+pio run -e <environment>
+```
+
+Note:  This command is run automatically by the upload target.
+
+### Building and Flashing the S3 file system
+
+If you have not previously flashed your AP using https://install.openepaperlink.de 
+you will need to flash both the file system as will as the firmware image.  
+
+Once flashed the you should **NOT** flash it again unless you want to clear 
+the data.
+
+You can build and flash the file system by running
+
+```
+pio run -e <environment> -t uploadfs
+```
+
+### Flashing S3 firmware built from source
+
+You can build and flash the S3 firmware by running
+
+```
+pio run -e <environment> -t upload
+```
+
