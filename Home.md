@@ -26,7 +26,7 @@ Please add additional information where possible!
 ### Other
 - [[2.9″ EL029GSWRN|2.9″ EL029GSWRN]]
 - [[4.2″‐ST‐GR4200C|4.2″‐ST‐GR4200C]]
-- [[6.4″ Chroma 74|Chroma-74]]
+- [[7.4″ Chroma 74|Chroma-74]]
 - [[7.5″ ST‐GR750BN|7.5″ ST‐GR750BN]]
 - [[13.3″-EL133C2WRN|13.3″-EL133C2WRN]]
 
