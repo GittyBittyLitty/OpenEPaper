@@ -66,12 +66,16 @@ flashing the S3 code.
 Please refer to the following table to find the correct environment for your
 AP.
 
-| name                   | Simple AP     | Mini AP v2        | Nano AP       | Yellow AP     | Mini AP v3    | AP and flasher | Mini AP v4 |
-| ---------------------- | ------------- | ----------------- | ------------- | ------------- | ------------- | -------------- |----------- |
-| **based on**           | esp32         | esp32-s2          | esp32-s2      | esp32-s3      | esp32-s3      | esp32-s3       | esp32-s3   |   
-| **psram**              | no            | 2MB               | 2MB           | 8MB           | 8MB           | 8MB            | 8MB        |   
-| **flash size**         | 4 MB          | 4MB               | 4MB           | 16MB          | 16MB          | 16MB           | 16MB       |  
-| **Platform IO Environment**  | Simple_AP | OpenEPaperLink_Mini_AP | OpenEPaperLink_Nano_AP | ESP32_S3_16_8_YELLOW_AP | ESP32_S3_16_8_YELLOW_AP | OpenEPaperLink_AP_and_Flasher | OpenEPaperLink_Mini_AP_v4|
+| name| **Platform IO Environment** | **based on** | **psram** | **flash size** | 
+| - | - | :-: | :-: | :-: |
+| Simple AP | Simple_AP | esp32 | no | 4 MB |
+| Mini AP v2 | OpenEPaperLink_Mini_AP | esp32-s2 | 2MB | 4 MB |
+| Nano AP | OpenEPaperLink_Nano_AP | esp32-s2 | 2MB | 4 MB |
+| Yellow AP | ESP32_S3_16_8_YELLOW_AP | esp32-s3 | 8MB | 16 MB |
+| Mini AP v3 | ESP32_S3_16_8_YELLOW_AP | esp32-s3 | 8MB | 16 MB |
+| Mini AP v4 | OpenEPaperLink_Mini_AP_v4 | esp32-s3 | 8MB | 16 MB |
+| AP and flasher | OpenEPaperLink_AP_and_Flasher | esp32-s3 | 8MB | 16 MB |
+
 
 ### Building S3 firmware from source
 
