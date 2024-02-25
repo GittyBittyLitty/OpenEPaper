@@ -116,26 +116,26 @@ You can build and flash the Primary ESP32 firmware by running
 pio run -e <environment> -t upload
 ```
 
-### Building the ESP32-C6 PlatformIO Radio firmware from source
-
+### Building the ESP32-C6 Radio firmware from source
 Some APs use an esp32-c6 for a radio instead of a segmented tag. 
 
 It is only necessary to build the esp32-c6 firmware from source if you want to modify it.  Otherwise https://install.openepaperlink.de is the way to go!
+
+There are two versions of the C6 radio firmware, a PlatformIO based located in the ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP subdirectory and
+an Arduino based project located in the ARM_Tag_FW/Arduino_OpenEPaperLink_C6_AP directory.
+
+## Building the ESP32-C6 PlatformIO Radio from source
 
 OpenEPaperLink_esp32_C6_AP is an ESP-IDF (Espressif IoT Development Framework) 
 project.  If this doesn't mean anything to you see https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/#
 
 Once you have IDF in your path you build the code by running idf.py build.
 
-## Flashing the ESP32-C6 PlatformIO Radio firmware built from source
-
 The image is flash to the C6 via the serial port by running idf.py -p <Serial_Port> flash.
 
 During development some flashing time can be saved by running idf.py -p <Serial_Port> app-flash.
 
-## Watching the ESP32-C6 PlatformIO Radio firmware Debug Log 
-
-The debug serial port may be monitored by running idf.py -p <Serial_Port> monitor.
+Finally the debug serial port may be monitored by running idf.py -p <Serial_Port> monitor.
 
 Multiple commands given to idf.py at one time.
 
