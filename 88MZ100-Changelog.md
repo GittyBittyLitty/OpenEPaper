@@ -1,4 +1,9 @@
-## v0027 - Compression and proper UI fonts ##
+## v0027
+* Greatly reduced EPD booster, resulting in much less EPD power consumption
+* Will now work down to approximately 2 volts (if your batteries would support any currents at that low a voltage)
+* No more red-bleed in large areas with black/red
+
+## v0027 beta - Compression and proper UI fonts ##
 
 * Moved various parts to C++, most parts compiled with -O3
 * Improved stability, watchdog now runs properly
