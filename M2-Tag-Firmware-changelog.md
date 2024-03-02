@@ -2,6 +2,20 @@
 - Fixes a bug that would cause inadvertent redraw even though the image remains the same
 - Adds Command 33 to sample battery voltage
 
+## v0026 ##
+- Managed to free up a LOT of idata space. If you're not a developer, you probably don't care about this. (The ZBS243 has exactly 256 bytes of 'normal' memory. No, really.). Now 210 bytes stack!
+- Fixes the LUT-issue that many people had
+- No more corrupted images, ever (Probably. If the EPD misses a beat, this could still happen)
+- Uses real MD5 checksums for both images and future OTA firmware updates
+- Validates future OTA firmware updates with a magic number, preventing wrong files getting flashed
+- Fixed a bug where a really cold tag might not boot due to a slower response from the EPD
+- Shows 'update failed' screen when an invalid update is sent to the tag
+- Reports back the 'failed update' status back to the AP
+- Fixed a bug where a buttonized-M2 would repeatedly report back a pressed button
+- Debugging messages over the serial link now optional, for more room in flash
+- Improved font drawing, now uses far less flash space
+- about 7K of flash is now available again
+
 ## 0025 - Bugfix ##
 - Fixes a bug that would cause corrupted transfers
 
