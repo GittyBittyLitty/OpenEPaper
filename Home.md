@@ -41,7 +41,7 @@ Please add additional information where possible!
 ## Hardware
 
 - Processor: [[ZBS243 (SEM9110) SoC|ZBS243-(SEM9110)-SoC]]
-- [[NFC chip|NFC-Solum-2.9"-and-1.54"]]
+- [[NFC chip|NFC-Solum-2.9″-and-1.54″]]
 - [[Troubleshooting tags|Troubleshooting-Tags]]
 - [[Hardware mods for the tags|Hardware-mods]] to add a button or reed switch
 
