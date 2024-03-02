@@ -1,3 +1,7 @@
+## v0027 - Cmd/redraw ##
+- Fixes a bug that would cause inadvertent redraw even though the image remains the same
+- Adds Command 33 to sample battery voltage
+
 ## 0025 - Bugfix ##
 - Fixes a bug that would cause corrupted transfers
 
