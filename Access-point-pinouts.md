@@ -26,3 +26,4 @@ In this table, you will find the pinouts for connecting an access point, for the
 
 Pins in the list for the esp32-c6 are to be connected to the corresponding pins on the Yellow AP, except for the led pins which are off course seperate.
 For the other environments, the listed pins are te be connected to the corresponding pins on a ZBS-based tag.
+For example, then you're building a Yellow AP, pin 19 of the esp32-S3 is to be connected to pin 16 of the esp32-C6.
