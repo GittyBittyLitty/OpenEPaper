@@ -132,7 +132,7 @@ any fonts in the /fonts folder:
 * `calibrib30.vlw` upper case, lower case, numbers, and `äöüßÄÖÜåÅ!\"#$%&'()*+,-./:;<=>?@[\\]^_{|}~°`
 * `twcondensed20.vlw` Only `SUMOTWEHFRAZDIV0123456789`. Use for weekday names and numbers. 
 
-If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
+If you want to add extra fonts to this list, you can convert them from Truetype by using Processing (https://processing.org/) and this script https://github.com/Bodmer/TFT_eSPI/tree/master/Tools/Create_Smooth_Font/Create_font . Make sure you set `smooth = false` in the script, to prevent antialissing. Place the .vlw font file in the /fonts folder. No need to update/rebuild the firmware.
 
 ### Truetype fonts:
 
