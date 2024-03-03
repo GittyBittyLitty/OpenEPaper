@@ -108,9 +108,35 @@ You can build and flash the file system by running
 pio run -e <environment> -t uploadfs
 ```
 
+**NB:** If you modify any of the files under .../ESP32_AP-Flasher/wwwroot you
+must run gzip_wwwfiles.py prior to uploading the filesystem to update
+the compressed versions of the files in the .../ESP32_AP-Flasher/data
+subdirectory.
+
+
+```
+skip@Dell-7040:~/esl/OpenEPaperLink/ESP32_AP-Flasher$ python gzip_wwwfiles.py
+Gzipping: upload-demo.html
+Gzipping: index.html
+Gzipping: edit.html
+Gzipping: ota.js
+Gzipping: favicon.ico
+Gzipping: flash.js
+Gzipping: setup.html
+Gzipping: main.js
+Gzipping: main.css
+Gzipping: setup.js
+Gzipping: painter.js
+Gzipping: variables-demo.html
+Gzipping: content_cards.json
+Gzipping: jsontemplate-demo.html
+skip@Dell-7040:~/esl/OpenEPaperLink/ESP32_AP-Flasher$
+```
+
+
 ### Flashing the Primary ESP32 firmware built from source
 
-You can build and flash the Primary ESP32 firmware by running
+You can build and flash the Primary ESP32 firmware by running 
 
 ```
 pio run -e <environment> -t upload
@@ -166,4 +192,5 @@ Saved PC:0x40022d86
 0x40022d86: uart_tx_one_char3 in ROM
 ...
 ```
+
 
