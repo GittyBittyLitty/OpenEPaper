@@ -1,3 +1,10 @@
+## v0028
+* Fixed a bug where an interrupted transfer wouldn't be continued properly
+* Improved compatibility with ESP32-S2/TagAP-based accesspoints
+* Fixed handling for large compressed files; Too large files could overflow a buffer during rendering
+* Added a few commands
+* Added 'deep sleep' command, blanking the screen and forcing the tag to sleep
+
 ## v0027
 * Greatly reduced EPD booster, resulting in much less EPD power consumption
 * Will now work down to approximately 2 volts (if your batteries would support any currents at that low a voltage)
