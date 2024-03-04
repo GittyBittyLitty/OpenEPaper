@@ -2,6 +2,9 @@
 
 This tag is not supported by OpenEPaper link yet, but ports are in progress.
 
+If you are interested in playing with the Chroma 74 in the mean time an updated version of 
+Dmitry Grinberg's original Chroma74 code and AP firmware can be found [here](https://github.com/skiphansen/dmitrygr-einkTags).
+
 ## Specs
 * TI CC1110 - 26Mhz 8051 32kB Flash / 4kB RAM
 * 6.4 x 3.5 in ePaper display (BWR or BWY) 640x384px
