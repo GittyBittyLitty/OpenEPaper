@@ -1,3 +1,13 @@
+## 0027 - Compression
+- Adds zlib compression for images, especially useful on larger tags
+- Fixes a bug where are sprites/objects outside of the EPD viewport would result in an overflow
+- After a button press, a second check-in is scheduled after 10 seconds, or after the 'button' preloaded image is drawn
+- The tag will no longer go back to the previous image after a button press
+- Fixes a bug that would invalidate an interrupted transfer
+- Improved compatibility with S2/TagAP-based tags
+- Added support for 5.85", 5.85"-lowtemp, 2.6" and 2.7" - Thanks VstudioLAB!
+- Changes to the EPD drivers to allow for linear reading of compressed image datastreams (update your AP if your image is upside down!)
+
 ## 0026 - Universal FW
 - Incorporates Jonas' changes for LED control
 - Fixed 4.3" shutdown routine
