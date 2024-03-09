@@ -147,10 +147,9 @@ Some APs use an esp32-c6 for a radio instead of a segmented tag.
 
 It is only necessary to build the esp32-c6 firmware from source if you want to modify it.  Otherwise https://install.openepaperlink.de is the way to go!
 
-There are two versions of the C6 radio firmware, a PlatformIO based located in the ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP subdirectory and
-an Arduino based project located in the ARM_Tag_FW/Arduino_OpenEPaperLink_C6_AP directory.
+There are two versions of the C6 radio firmware, a ESP-IDF (Espressif IoT Development Framework) based located in the ARM_Tag_FW/OpenEPaperLink_esp32_C6_AP subdirectory and an Arduino based project located in the ARM_Tag_FW/Arduino_OpenEPaperLink_C6_AP directory.
 
-## Building the ESP32-C6 PlatformIO Radio from source
+## Building the ESP32-C6 Radio ESP-IDF firmware from source
 
 OpenEPaperLink_esp32_C6_AP is an ESP-IDF (Espressif IoT Development Framework) 
 project.  If this doesn't mean anything to you see https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/#
