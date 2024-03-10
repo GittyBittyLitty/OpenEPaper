@@ -7,8 +7,8 @@ You can build one of the different access points models yourself, or you can ord
 
 The following build environments are available. If you build one of these AP's, you can easily upload the firmware to your MCU via https://install.openepaperlink.de, and update new firmware releases over the air via the webinterface of the AP, without having to install Platform.io and Visual Studio Code. Also, you will find binaries of the firmware in the [releases](https://github.com/jjwbruijn/OpenEPaperLink/releases).
 
-| name                   | Simple AP     | Mini AP v2        | Nano AP       | Yellow AP     | Mini AP v3    | AP and flasher |
-| ---------------------- | ------------- | ----------------- | ------------- | ------------- | ------------- | -------------- |
+| name                   | Simple AP     | Mini AP v2        | Nano AP       | Yellow AP     | Mini AP v3 /<br>Mini AP v4  | AP and flasher |
+| ---------------------- | ------------- | ----------------- | ------------- | ------------- | ----------- | -------------- |
 | **based on**               | esp32         | esp32-s2          | esp32-s2      | esp32-s3      | esp32-s3      | esp32-s3       |
 | **radio**                  | Segmented / 1.54” / 2.9” | Segmented tag     | 1.54” tag     | esp32-c6      | esp32-c6      | 1.54” tag      |
 | **psram**                  | no            | 2MB               | 2MB           | 8MB           | 8MB           | 8MB            |
