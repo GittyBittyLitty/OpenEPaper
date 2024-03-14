@@ -20,7 +20,7 @@ Dmitry Grinberg's original Chroma74 code and AP firmware can be found [here](htt
 - [x] zbs243_Tag_FW recompiled for CC1110 processor (it **didn't fit** by a **LOT!**)
 - [x] Comment out unneeded and optional code (still didn't fit)
 - [x] Analyze memory map looking for areas to reduce RAM and code usage
-- [x] Changed BLOCK_DATA_SIZE from 4096 (all CC1110/s RAM) to 1089 (11 * 99).
+- [x] Changed BLOCK_DATA_SIZE from 4096 (**all the CC1110 RAM**) to 1089 (11 * 99).
 - [x] Added SubGhz support to an OEPL AP
 - [x] Get pings between Tag and AP working
 - [x] Create JSON type tag
