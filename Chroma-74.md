@@ -58,3 +58,8 @@ close to the price of a new display from Waveshare.
 This tag is no longer in production, it was replaced by the Chroma 74 H+ which 
 has a higher resolution screen and a more modern SOC.  From outward appearances 
 the Chroma 74 and Chroma 74 H+ are identical.
+
+## Misc Chroma74 links of interest
+
+* [PCB pictures](https://github.com/TechIsCool/Chroma74/tree/master/pictures)
+* [Weather Station Project](https://hackaday.io/project/175947-74-e-ink-shelf-label-used-as-a-weather-station/details)
