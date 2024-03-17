@@ -61,5 +61,6 @@ the Chroma 74 and Chroma 74 H+ are identical.
 
 ## Misc Chroma74 links of interest
 
-* [PCB pictures](https://github.com/TechIsCool/Chroma74/tree/master/pictures)
+* [TechIsCool's PCB pictures](https://github.com/TechIsCool/Chroma74/tree/master/pictures)
+* [atc1441's PCB picture](https://raw.githubusercontent.com/atc1441/E-Paper_Pricetags/main/CHROMA74%207.5%20CC1110/Stock_pcb.jpg)
 * [Weather Station Project](https://hackaday.io/project/175947-74-e-ink-shelf-label-used-as-a-weather-station/details)
