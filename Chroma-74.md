@@ -30,8 +30,8 @@ Dmitry Grinberg's original Chroma74 code and AP firmware can be found [here](htt
 - [x] Add detection of CC1101 presence to AP
 - [x] Add sleep support
 - [x] Get AP search working
-- [ ] Modify image download routine for 1089 BLOCK_DATA_SIZE w/o changing OEPL protocol
-- [ ] Get image download to flash from AP working
+- [x] Modify image download routine for 1089 BLOCK_DATA_SIZE w/o changing OEPL protocol
+- [x] Get image download to flash from AP working
 - [ ] Get Display image from flash working
 - [ ] Get OTA FW updates from AP working
 - [ ] Audit and optomize sleep current
