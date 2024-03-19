@@ -1,6 +1,7 @@
 ## Specs
 * TI CC1110 - 26Mhz 8051 32kB Flash / 4kB RAM
 * 6.4 x 3.5 in ePaper display (BWR or BWY) 640x384px
+* UC8159 like EPD controller supports 3 bits per pixel
 * 1Mbyte SPI flash
 * 6x CR2450 button cell
 * SubGhz (868 Mhz / 915 Mhz) Radio
