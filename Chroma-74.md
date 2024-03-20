@@ -33,9 +33,10 @@ Dmitry Grinberg's original Chroma74 code and AP firmware can be found [here](htt
 - [x] Get AP search working
 - [x] Modify image download routine for 1089 BLOCK_DATA_SIZE w/o changing OEPL protocol
 - [x] Get image download to flash from AP working
-- [ ] Get Display image from flash working
+- [x] Get Display image from flash working
+- [ ] Get some "UI" elements working
 - [ ] Get OTA FW updates from AP working
-- [ ] Audit and optomize sleep current
+- [ ] Audit and optimize sleep current
 - [ ] Send firmware PR for OEPL release (auto updates, etc)
 - [ ] Start work on next tag (Chroma 42)
 
