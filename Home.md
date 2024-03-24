@@ -29,6 +29,7 @@ Please add additional information where possible!
 - [[7.4″ Chroma 74|Chroma-74]]
 - [[7.5″ ST‐GR750BN|7.5″ ST‐GR750BN]]
 - [[13.3″-EL133C2WRN|13.3″-EL133C2WRN]]
+- [[7.4″ ST-GM7500N]]
 
 ## Access Points
 
